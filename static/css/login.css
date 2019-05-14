@@ -1,0 +1,27 @@
+body {
+    background-color: #EEE;
+}
+body > .grid {
+    height: 100%;
+}
+h1 {
+    color: #333;
+}
+.image {
+    margin-top: -150px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+.column {
+    max-width: 450px;
+}
+.button {
+    background-color: #D35400 !important;
+}
+.button:active {
+    background-color: #BA4A00 !important;
+}
+.button:hover {
+    background-color: #C75000 !important;
+}
+

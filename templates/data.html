@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Data{% endblock %}
+{% block content %}
+<div class="ui container" style="margin-top: 54px;">
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Track</th>
+      <th>Comment</th>
+      <th>Driver</th>
+      <th>Duration</th>
+      <th>Distance</th>
+      <th>Size</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tbody>
+    {% for e in entries %}
+    <tr>
+    <td>{{ e.id }}
+    <td>{{ e.created_at}}</td>
+    <td>{{ e.track.name }}</td>
+    <td>{{ e.comment }}</td>
+    <td>{{ e.driver }}</td>
+    <td>{{ e.duration }}</td>
+    <td>{{ e.distance }} km</td>
+    <td>{{ e.filesize }} MB</td>
+    <td style="padding: 5px;"><div class="ui right floated mini labeled icon button" id="edit"><i class="download icon"></i> CSV</div></td>
+    </tr>
+    {% endfor %}
+ </tbody>
+</table>
+</div>
+{% endblock %}
