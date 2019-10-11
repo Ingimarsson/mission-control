@@ -25,7 +25,7 @@ SECRET_KEY = 'l_y%$q5=5hfld&ciu_j+bofp^z*)5=yesv!rg@vl5yo^%sy@_o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['control.teamspark.is']
+ALLOWED_HOSTS = ['live.teamspark.is', '127.0.0.1']
 
 
 # Application definition

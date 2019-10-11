@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load data_extras %}
 {% block title %}Data{% endblock %}
 {% block content %}
 <div class="ui container" style="margin-top: 54px;">
@@ -25,10 +26,10 @@
     <td>{{ e.track.name }}</td>
     <td>{{ e.comment }}</td>
     <td>{{ e.driver }}</td>
-    <td>{{ e.duration }}</td>
-    <td>{{ e.distance }} km</td>
-    <td>{{ e.filesize }} MB</td>
-    <td style="padding: 5px;"><div class="ui right floated mini labeled icon button" id="edit"><i class="download icon"></i> CSV</div></td>
+    <td>{{ e.duration|delta }}</td>
+    <td>{{ e.distance|floatformat:2 }} km</td>
+    <td>{{ e.filesize|filesizeformat }}</td>
+    <td style="padding: 5px;"><a class="ui right floated mini labeled icon button" id="edit" href="/csv_gogn/{{ e.filename }}"><i class="download icon"></i> CSV</a></td>
     </tr>
     {% endfor %}
  </tbody>

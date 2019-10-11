@@ -48,12 +48,12 @@ $(document).ready(function() {
         });
     });
 
-    client = new Paho.MQTT.Client('wss://control.teamspark.is:8083/ws', "clientId" + new Date().getTime());
+    client = new Paho.MQTT.Client('ws://control.teamspark.is:8083/ws', "clientId" + new Date().getTime());
 
     client.onConnectionLost = onConnectionLost;
     client.onMessageArrived = onMessageArrived;
 
-    client.connect({onSuccess:onConnect, userName: 'spark', password: 'spark'});
+    client.connect({onSuccess:onConnect});
 
     function onConnect() {
       console.log("onConnect");
@@ -83,8 +83,8 @@ $(document).ready(function() {
         $("#"+d).text(data[d]);
       }
         
-      $("#lat").text(data.x);
-      $("#lon").text(data.y);
+      $("#lat").text(parseFloat(data.x).toFixed(6));
+      $("#lon").text(parseFloat(data.y).toFixed(6));
 
       if (data.track != track_id) {
         $.ajax({
