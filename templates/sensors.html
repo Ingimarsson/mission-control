@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sensors{% endblock %}
+{% block scripts %}
+<script src="{% static "js/sensors.js" %}"></script>
+<style>
+  td,th { padding: 6px !important; }
+  body {padding-bottom: 10px; overflow-y: scroll !important;}
+  .button {margin-bottom: 10px !important;}
+</style>
+{% endblock %}
+{% block content %}
+<div class="ui container" style="margin-top: 54px;">
+<div class="ui large basic label">Messages <div class="detail">{{ messages }}</div></div>
+<div class="ui large basic label">Signals <div class="detail">{{ sensors }}</div></div>
+{% if error > 0 %}
+<div class="ui large basic red label">Invalid Paths <div class="detail">{{ error }}</div></div>
+{% endif %}
+<div class="ui right floated small primary labeled icon button" id="upload"><i class="upload icon"></i> Upload Database</div>
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Frame ID</th>
+      <th>Name</th>
+      <th>Bits</th>
+      <th>Signed</th>
+      <th>Float</th>
+      <th>Byte Order</th>
+      <th>Path</th>
+      <th>Frequency</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in table %}
+      <tr><td><b>{{ t.id }}</b></td><td><b>{{ t.name }}</b></td><td> </td><td> </td><td></td><td></td><td></td><td></td><td></td></tr>
+      {% for s in t.signals %}
+        <tr data-path="{{ s.path }}"><td></td><td>{{ s.name }}</td><td>{{ s.length }}</td><td>{{ s.is_signed|yesno|capfirst }}</td><td>{{ s.is_float|yesno|capfirst }}</td><td>{{ s.byte_order|yesno:"Big,Little" }}</td><td>{{ s.path }}</td><td class="frequency">0 val/s</td><td class="value">0</td></tr>
+      {% endfor %}
+    {% endfor %}
+ </tbody>
+</table>
+</div>
+{% endblock %}
+{% block modals %}
+<div class="ui tiny modal" id="modal_upload">
+    <i class="close icon"></i>
+    <div class="header">
+        Upload Database
+    </div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <label>Database File</label>
+                <div class="ui left action input" name="upload">
+                    <div class="ui icon button">DBC</div> 
+                    <input type="text" placeholder="" readonly style="height: 36px;">
+                    <input type="file" accept=".dbc">
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="actions">
+        <button type="submit" id="submit" class="ui primary button">Upload</button>
+    </div>
+</div>
+{% endblock %}

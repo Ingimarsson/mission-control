@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}Data{% endblock %}
+{% load static %}
+{% block title %}Accumulator{% endblock %}
+{% block scripts %}
+<script src="{% static "js/accumulator.js" %}"></script>
+{% endblock %}
 {% block content %}
 <div class="ui equal width grid" style="margin: 10px;">
   <div class="column">
@@ -12,13 +16,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td>Current</td><td>0.00 V</td></tr>
-    <tr><td>Voltage</td><td>0.00 V</td></tr>
-    <tr><td>Air Negative</td><td></td></tr>
-    <tr><td>Air Positive</td><td></td></tr>
-    <tr><td>TSAL</td><td></td></tr>
-    <tr><td>Motor Controller</td><td></td></tr>
-    <tr><td>Discharge</td><td></td></tr>
+    <tr><td>Voltage</td><td><span id="voltage-total">0.00 V</span></td></tr>
   </tbody>
   </table>
 
@@ -28,8 +26,8 @@
   <thead>
     <tr>
       <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -50,9 +48,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S0-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -77,9 +75,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S1-P0</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -101,9 +99,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S1-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -128,9 +126,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S2-P0</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -152,9 +150,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S2-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -179,9 +177,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S3-P0</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -203,9 +201,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S3-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -230,9 +228,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S4-P0</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -254,9 +252,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S4-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -281,9 +279,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S5-P0</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
@@ -305,9 +303,9 @@
     <table class="ui single line table">
   <thead>
     <tr>
-      <th>S0-P0</th>
-      <th></th>
-      <th></th>
+      <th>S5-P1</th>
+      <th width=40%></th>
+      <th width=40%></th>
     </tr>
   </thead>
   <tbody>
