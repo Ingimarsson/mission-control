@@ -16,6 +16,7 @@ Mission Control is a component of Team Spark's telemetry system. It consists of 
  - Ability to upload DBC files to automatically update CAN database
  - Live feed from cameras on the car
  - Compression of csv files to save space
+<<<<<<< HEAD
  - Map and lap time overlays to use with OBS when live streaming events.
 
 ### Instructions
@@ -26,3 +27,6 @@ Mission Control is a component of Team Spark's telemetry system. It consists of 
 
  - dbc_extract.py: Takes a DBC file and puts MQTT topics in its signal comments
  - dbc_to_json.py: Takes a DBC file with MQTT topics and dumps JSON from OpenMCT
+=======
+ - Map and lap time overlays to use with OBS when live streaming events.
+>>>>>>> c7e7bf6e203acccec2ec1f11fc344141264d46c6
