@@ -23,16 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(template_name='login.html')),
     path('logout/', auth_views.LogoutView.as_view(next_page='/login')),
-    path('', views.dashboard),
-    path('data/', views.data),
-    path('tracks/', views.tracks),
-    path('accumulator/', views.accumulator),
+    path('', views.accumulator),
     path('sensors/', views.sensors),
-    path('data/get/<int:id>', views.data_get),
-    path('api/track/<int:id>', views.api_track),
-    path('api/track/edit/<int:id>', views.api_track_edit),
-    path('api/track/add', views.api_track_add),
-    path('api/recording/start', views.api_recording_start),
-    path('api/recording/stop', views.api_recording_stop),
     path('api/sensors/upload', views.api_sensors_upload)
 ]

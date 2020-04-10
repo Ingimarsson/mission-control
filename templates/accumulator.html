@@ -3,34 +3,76 @@
 {% block title %}Accumulator{% endblock %}
 {% block scripts %}
 <script src="{% static "js/accumulator.js" %}"></script>
+<style>
+  body { height: 890px; }
+</style>
 {% endblock %}
 {% block content %}
 <div class="ui equal width grid" style="margin: 10px;">
   <div class="column">
     <table class="ui single line table">
-  <thead>
-    <tr>
-      <th>Status</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Voltage</td><td><span id="voltage-total">0.00 V</span></td></tr>
-  </tbody>
-  </table>
-
+      <thead>
+        <tr>
+          <th>Overview</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Current</td><td><span id="current-total">0.00 A</span></td></tr>
+        <tr><td>Voltage</td><td><span id="voltage-total">0.00 V</span></td></tr>
+        <tr><td>Min Cell Voltage</td><td><span id="current-total">0.00 A</span></td></tr>
+        <tr><td>Max Cell Voltage</td><td><span id="current-total">0.00 V</span></td></tr>
+        <tr><td>Target Voltage</td><td><span id="current-total">0.00 V</span></td></tr>
+      </tbody>
+    </table>
+    <table class="ui single line table">
+      <thead>
+        <tr>
+          <th>Status Variables</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Air Negative</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+        <tr><td>Air Positive</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+        <tr><td>Motorcontroller</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+        <tr><td>Connector</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+        <tr><td>Pre-Charge</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+        <tr><td>Discharge</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
+      </tbody>
+    </table>
+    <table class="ui single line table">
+      <thead>
+        <tr>
+          <th>Thresholds</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+       <tbody>
+        <tr>
+          <td>Voltage</td>
+          <td><span id=""><div class="ui yellow horizontal label">3.5 V</div></span></td>
+          <td><span id=""><div class="ui red horizontal label">3.2 V</div></span></td>
+        </tr>
+        <tr>
+          <td>Temperature</td>
+          <td><span id=""><div class="ui yellow horizontal label">50 °C</div></span></td>
+          <td><span id=""><div class="ui red horizontal label">60 °C</div></span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="column">
     <table class="ui single line table">
-  <thead>
-    <tr>
-      <th>S0-P0</th>
-      <th width=40%></th>
-      <th width=40%></th>
-    </tr>
-  </thead>
-  <tbody>
+      <thead>
+      <tr>
+        <th>S0-P0</th>
+        <th width=40%></th>
+        <th width=40%></th>
+      </tr>
+    </thead>
+    <tbody>
 <tr><td>C0</td><td><span id="voltage-1">0.00 V</span></td><td><span id="temperature-1">0.00 °C</span></td></tr>
 <tr><td>C1</td><td><span id="voltage-2">0.00 V</span></td><td><span id="temperature-2">0.00 °C</span></td></tr>
 <tr><td>C2</td><td><span id="voltage-3">0.00 V</span></td><td><span id="temperature-3">0.00 °C</span></td></tr>
@@ -56,9 +98,9 @@
   <tbody>
  
 <tr><td>C0</td><td><span id="voltage-13">0.00 V</span></td><td><span id="temperature-13">0.00 °C</span></td></tr>
-<tr><td>C1</td><td><span id="voltage-14">0.00 V</span></td><td><span id="temperature-14">0.00 °C</span></td></tr>
+<tr class="warning"><td>C1</td><td><span id="voltage-14">0.00 V</span></td><td><span id="temperature-14">0.00 °C</span></td></tr>
 <tr><td>C2</td><td><span id="voltage-15">0.00 V</span></td><td><span id="temperature-15">0.00 °C</span></td></tr>
-<tr><td>C3</td><td><span id="voltage-16">0.00 V</span></td><td><span id="temperature-16">0.00 °C</span></td></tr>
+<tr class="negative"><td>C3</td><td><span id="voltage-16">0.00 V</span></td><td><span id="temperature-16">0.00 °C</span></td></tr>
 <tr><td>C4</td><td><span id="voltage-17">0.00 V</span></td><td><span id="temperature-17">0.00 °C</span></td></tr>
 <tr><td>C5</td><td><span id="voltage-18">0.00 V</span></td><td><span id="temperature-18">0.00 °C</span></td></tr>
 <tr><td>C6</td><td><span id="voltage-19">0.00 V</span></td><td><span id="temperature-19">0.00 °C</span></td></tr>

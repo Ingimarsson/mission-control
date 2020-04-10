@@ -2,30 +2,21 @@
 <!doctype html>
 <html>
 <head>
-    <title>Innskráning | Team Spark</title>
+    <title>Login | Mission Control</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
     <link rel="stylesheet" type="text/css" class="ui" href='{% static "css/login.css"%}'>
-	<script>
-		$( document ).ready(function() {
-		if (location.protocol != "https:") {
-			$(".red").css("display", "block");
-		}
-		});
-	</script>
 </head>
 <body>
 <div class="ui middle aligned center aligned grid">
     <div class="column">
-        <img src='{% static "img/spark.png" %}' class="image" style="max-height: 133px; width: auto;">
-        <h1 style="margin: 0px !important;">Mission Control</h1><br/><br/>
-	<div class="ui red message" style="display: none;"><div class="header">Insecure connection</div><p>For SSL encryption use <a href="https://control.teamspark.is">https://control.teamspark.is</a></p></div>
+        <img src='{% static "img/spark.png" %}' class="image">
+        <h1>Mission Control</h1><br/><br/>
         <form class="ui large form" method="post">
             {% csrf_token %}
-            <div class="ui stacked segment">
+            <div class="ui segment">
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="user icon"></i>
@@ -41,6 +32,8 @@
                 <button type="submit" class="ui fluid large teal submit button">Sign In</button>
             </div>
         </form>
+        <p><a href='#'>GitHub</a> - Licenced under <a href='#'>MIT Licence</a></p>
+        <p>Version 0.2.0</p>
     </div>
 </div>
 </body>
