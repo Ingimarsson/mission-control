@@ -1,29 +1,34 @@
-## Mission Control
+# Mission Control
 
-Mission Control is a component of Team Spark's telemetry system. It consists of a backend that listens to all measurements from the car over the MQTT protocol, and a web-based frontend to manage the system.
+Mission Control is a frontend component of the Team Spark telemetry stack. It consists of a background service that parses data from MQTT, and a web-based frontend with the following features.
 
-### Features
+- A dashboard for accumulator measurements
+- A list of all sensors along with latest measurements and frequencies
+- Ability to upload the DBC file that is used to decode measurements
 
- - Saves timestamped measurements to a csv file when recording mode is enabled
- - Data is saved with comments, driver and track info
- - Overview of system status, displays values per second from each subsystem
- - Live map of car position on track
- - Ability to define tracks with starting gates by a list of gps coordinates
- - When recording with a defined track, lap times and other statistics are shown
- 
-### To be implemented
+## Installation
 
- - Ability to upload DBC files to automatically update CAN database
- - Live feed from cameras on the car
- - Compression of csv files to save space
- - Map and lap time overlays to use with OBS when live streaming events.
+This service is intended to run in a Docker container.
 
-### Instructions
+## Development
 
-## Starting the server
+You can set up a development environment with the following commands. First you need to set up a virtual environment.
 
-## Useful scripts
+    sudo apt update
+    sudo apt install python3-venv
 
- - dbc_extract.py: Takes a DBC file and puts MQTT topics in its signal comments
- - dbc_to_json.py: Takes a DBC file with MQTT topics and dumps JSON from OpenMCT
- - Map and lap time overlays to use with OBS when live streaming events.
+Now you can create and enter a virtual environment
+
+    cd mission-control
+    python3 -m venv env
+    source env/bin/activate
+
+Now you can install dependencies and run a development server
+
+    pip3 install -r requirements.txt
+    python3 manage.py runserver
+
+## Utilities
+
+ - `dbc_extract.py`: Takes a DBC file and puts MQTT topics in its signal comments
+ - `dbc_to_json.py` Takes a DBC file with MQTT topics and dumps JSON from OpenMCT
