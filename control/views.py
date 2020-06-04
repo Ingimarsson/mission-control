@@ -19,6 +19,15 @@ def accumulator(request):
     """
     return render(request, 'accumulator.html', {'name': 'Accumulator'})
 
+
+@login_required
+def dashboard(request):
+    """
+    Renders the dashboard.
+    """
+    return render(request, 'dashboard.html', {'name': 'Dashboard'})
+
+
 @login_required
 def sensors(request):
     """

@@ -8,9 +8,9 @@
 </style>
 {% endblock %}
 {% block content %}
-<div class="ui equal width grid" style="margin: 10px;">
+<div class="ui equal width stackable grid" style="margin: 10px;">
   <div class="column">
-    <table class="ui single line table">
+    <table class="ui single line unstackable table">
       <thead>
         <tr>
           <th>Overview</th>
@@ -25,7 +25,7 @@
         <tr><td>Target Voltage</td><td><span id="current-total">0.00 V</span></td></tr>
       </tbody>
     </table>
-    <table class="ui single line table">
+    <table class="ui single line unstackable table">
       <thead>
         <tr>
           <th>Status Variables</th>
@@ -41,7 +41,7 @@
         <tr><td>Discharge</td><td><span id=""><div class="ui red horizontal label">On</div></span></td></tr>
       </tbody>
     </table>
-    <table class="ui single line table">
+    <table class="ui single line  unstackable table">
       <thead>
         <tr>
           <th>Thresholds</th>
@@ -64,7 +64,7 @@
     </table>
   </div>
   <div class="column">
-    <table class="ui single line table">
+    <table class="ui single line  unstackable table">
       <thead>
       <tr>
         <th>S0-P0</th>

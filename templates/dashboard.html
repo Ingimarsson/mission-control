@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Accumulator{% endblock %}
+{% block scripts %}
+<script src="{% static "js/accumulator.js" %}"></script>
+<style>
+  body { height: 890px; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="ui container" style="margin-top: 64px; max-width: 500px !important;">
+  <h3 class="ui header">Overview</h3>
+  <table class="ui single line unstackable table">
+    <tbody>
+      <tr><td width=40%>Speed</td><td width=60%><span id="current-total"><h2>0.00 km/h</h2></span></td></tr>
+      <tr><td>Power</td><td><span id="voltage-total"><h2>0.00 kW</h2></span></td></tr>
+    </tbody>
+  </table>
+ 
+    <table class="ui single line unstackable table">
+      <tbody>
+   
+      <tr><td width=40%>Lap Time</td><td width=60%><span id="current-total"><h2>0.00 s</h2></span></td></tr>
+      <tr><td>Used Energy</td><td><span id="voltage-total"><h2>0.00 W/h</h2></span></td></tr>
+    </tbody>
+  </table>
+  <h3 class="ui header">Acceleration</h3>
+  <table class="ui single line unstackable table">
+    <tbody>
+      <tr><td width=40%>Acceleration (Inline)</td><td width=60%><span id="voltage-total"><h2>0.00 m/s²</h2></span></td></tr>
+      <tr><td>Acceleration (Lateral)</td><td><span id="current-total"><h2>0.00 m/s²</h2></span></td></tr>
+    </tbody>
+  </table>
+ 
+  <h3 class="ui header">Temperatures</h3>
+  <table class="ui single line unstackable table">
+    <tbody>
+      <tr><td width=33%>Motor Temp.</td><td width=33%>Min Cell Temp.</td><td width=33%>Max Cell Temp.</td></tr>
+      <tr><td width=33%><h2>0.00 °C</td><td width=33%><h2>0.00 °C</td></td><td width=33%><h2>0.00 °C</td></td></tr>
+      <tr><td width=33%>Temp. 1</td><td width=33%>Temp. 2</td><td width=33%>Temp. 3</td></tr>
+      <tr><td width=33%><h2>0.00 °C</td><td width=33%><h2>0.00 °C</td></td><td width=33%><h2>0.00 °C</td></td></tr>
+    </tbody>
+  </table>
+ <h3 class="ui header">Telemetry</h3>
+  <table class="ui single line unstackable table">
+    <tbody>
+      <tr><td width=40%>Throughput</td><td width=60%><span id="voltage-total"><h2>0 val/s</h2></span></td></tr>
+      <tr><td>Latency</td><td><span id="current-total"><h2>0 ms</h2></span></td></tr>
+    </tbody>
+  </table>
+ 
+</div>
+{% endblock %}

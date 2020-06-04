@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(template_name='login.html')),
     path('logout/', auth_views.LogoutView.as_view(next_page='/login')),
-    path('', views.accumulator),
+    path('', views.dashboard),
+    path('accumulator/', views.accumulator),
     path('sensors/', views.sensors),
-    path('api/sensors/upload', views.api_sensors_upload)
+    path('api/sensors/upload/', views.api_sensors_upload)
 ]
