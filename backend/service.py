@@ -6,10 +6,14 @@ import json
 
 class MissionControl(object):
     def __init__(self):
-        self.buffer= []                 # Data is collected to the buffer and emptied once per second
+        """
+        This function initializes the object.
 
-        self.current = 0                # Timestamp of current message
-        self.write = 0                  # Timestamp of last file write
+        Two variables are initialized, a buffer for incoming data, and a
+        variable for the timestamp of last update sent to clients.
+        """
+        self.buffer= []
+        self.send_time = 0
 
     def on_connect(self, client, userdata, flags, rc):
         """
@@ -22,18 +26,26 @@ class MissionControl(object):
     def on_message(self, client, userdata, msg):
         """
         This function is triggered every time an MQTT message is received.
+
+        All received messages are collected into the self.buffer list. When
+        a message arrives and the self.send_time timestamp is over a second
+        in the past, two MQTT messages are published.
+
+        "control/latest" is sent a JSON dictionary with one (latest) value 
+        from each received topic in the last second.
+
+        "control/count" is sent a JSON dictionary with the number of 
+        messages received from each topic in the last second.
         """
         print(msg.topic)
 
-        self.current = time() - self.start
-        
         # Structure the message and add to the buffer
         data = [self.current, msg.topic, msg.payload.decode("utf-8")]
 
         self.buffer.append(data)
 
         # Code that is executed every second
-        if self.current - self.write > 1:
+        if time() - self.send_time > 1:
 
             values_latest = {}
             values_count = {}
@@ -56,17 +68,18 @@ class MissionControl(object):
 
             # Clear buffer and reset timer
             self.buffer.clear()
-            self.write = self.current
+            self.send_time = time()
 
-ctrl = MissionControl()
 
-client = mqtt.Client()
-client.on_connect = ctrl.on_connect
-client.on_message = ctrl.beta_message
+if __name__ == "__main__":
+    ctrl = MissionControl()
 
-# The MQTT connection details should be read from ENV variables
-client.username_pw_set('spark', 'spark')
-client.connect("localhost", 1883, 60)
+    client = mqtt.Client()
+    client.on_connect = ctrl.on_connect
+    client.on_message = ctrl.on_message
 
-client.loop_forever()
+    client.username_pw_set('spark', 'spark')
+    client.connect("localhost", 1883, 60)
+
+    client.loop_forever()
 
