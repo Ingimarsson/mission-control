@@ -3,7 +3,7 @@ asgiref==3.2.7
 bitstruct==8.9.0
 cantools==33.2.0
 diskcache==4.1.0
-Django==3.0.5
+Django==3.0.7
 pkg-resources==0.0.0
 python-can==3.3.2
 pytz==2019.3
