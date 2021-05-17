@@ -31,16 +31,16 @@ class MissionControl(object):
         a message arrives and the self.send_time timestamp is over a second
         in the past, two MQTT messages are published.
 
-        "control/latest" is sent a JSON dictionary with one (latest) value 
+        "control/latest" is sent a JSON dictionary with one (latest) value
         from each received topic in the last second.
 
-        "control/count" is sent a JSON dictionary with the number of 
+        "control/count" is sent a JSON dictionary with the number of
         messages received from each topic in the last second.
         """
         print(msg.topic)
 
         # Structure the message and add to the buffer
-        data = [self.current, msg.topic, msg.payload.decode("utf-8")]
+        data = [msg.topic, msg.payload.decode("utf-8")]
 
         self.buffer.append(data)
 
@@ -50,18 +50,17 @@ class MissionControl(object):
             values_latest = {}
             values_count = {}
 
+
             for b in self.buffer:
-                if b[1].split('/')[1] in status:
-                    status[b[1].split('/')[1]] += 1
 
-                values_latest[b[1]] = b[2]
+                # Add msg to latest buffer that will be transited to front end
+                values_latest[b[0]] = b[1]
 
-                if b[1] in values_count:
-                    values_count[b[1]] += 1
+                # Count the topic samling rate. Count = 1 if not counted yet
+                if b[0] in values_count:
+                    values_count[b[0]] += 1
                 else:
-                    values_count[b[1]] = 1
-
-            status['total'] = len(self.buffer)
+                    values_count[b[0]] = 1
 
             client.publish('control/latest', json.dumps(values_latest))
             client.publish('control/count', json.dumps(values_count))
@@ -78,8 +77,7 @@ if __name__ == "__main__":
     client.on_connect = ctrl.on_connect
     client.on_message = ctrl.on_message
 
-    client.username_pw_set('spark', 'spark')
+    #client.username_pw_set('spark', 'spark')
     client.connect("localhost", 1883, 60)
 
     client.loop_forever()
-

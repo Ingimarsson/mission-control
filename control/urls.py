@@ -26,5 +26,5 @@ urlpatterns = [
     path('', views.dashboard),
     path('accumulator/', views.accumulator),
     path('sensors/', views.sensors),
-    path('api/sensors/upload/', views.api_sensors_upload)
+    path('api/sensors/upload', views.api_sensors_upload)
 ]
