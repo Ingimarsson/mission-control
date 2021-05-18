@@ -1,5 +1,5 @@
 // Create a client instance
-client = new Paho.MQTT.Client('ws://control.teamspark.is:8083/ws', "clientId" + new Date().getTime());
+client = new Paho.MQTT.Client('ws://localhost:9001/ws', "clientId" + new Date().getTime());
 
 // set callback handlers
 client.onConnectionLost = onConnectionLost;

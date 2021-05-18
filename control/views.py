@@ -45,7 +45,7 @@ def sensors(request):
 
         for mess in db.messages:
             ids.append(mess.frame_id)
-        
+
         ids.sort()
 
         for i in ids:
@@ -76,9 +76,8 @@ def api_sensors_upload(request):
     Accepts a file upload and writes the content to the DBC file.
     """
     if request.method == 'POST':
-        with open('/home/spark/mission-control/datalogger.dbc', 'wb+') as destination:
+        with open(settings.BASE_DIR + '/datalogger.dbc', 'wb+') as destination:
             for chunk in request.FILES['file'].chunks():
                 destination.write(chunk)
 
         return HttpResponse('ok')
-
