@@ -6,9 +6,12 @@ from django.conf import settings
 
 from django.http import HttpResponse
 
+from .models import Track
+
 import os
 import json
 import cantools
+from math import sin, cos, sqrt, atan2, radians
 
 from cantools.database import UnsupportedDatabaseFormatError
 
@@ -27,6 +30,96 @@ def dashboard(request):
     """
     return render(request, 'dashboard.html', {'name': 'Dashboard'})
 
+@login_required
+def track(request):
+    """
+    Renders the track page.
+    """
+    entries = Track.objects.all()
+    return render(request, 'track.html', {'name': 'Track', 'entries': entries})
+
+@login_required
+def settings_track(request):
+    entries = Track.objects.all()
+
+    return render(request, 'settings_tracks.html', {'name': 'Tracks', 'entries': entries})
+
+@login_required
+def api_settings_track(request, id):
+    entry = Track.objects.get(pk=id)
+
+    data = json.loads(entry.points)
+    data['name'] = entry.name
+
+    return HttpResponse(json.dumps(data))
+
+@login_required
+def api_track(request, id):
+    entry = Track.objects.get(pk=id)
+
+    data = json.loads(entry.points)
+    data['name'] = entry.name
+
+    return HttpResponse(json.dumps(data))
+
+@login_required
+@csrf_exempt
+def api_track_add(request):
+    data = Track.objects.create()
+
+    points = json.loads(request.POST['points'])['track']
+
+    distance = 0
+
+    for p in range(1, len(points)):
+        dlon = radians(points[p][0]) - radians(points[p-1][0])
+        dlat = radians(points[p][1]) - radians(points[p-1][1])
+
+        a = sin(dlat / 2)**2 + cos(points[p-1][1]) * cos(points[p][1]) * sin(dlon / 2)**2
+        distance += 2 * 6373 * atan2(sqrt(a), sqrt(1 - a))
+
+    data.name = request.POST['name']
+    data.points = request.POST['points']
+    data.size = len(points)
+    data.distance = round(distance,2)
+
+    data.save()
+
+    return HttpResponse('ok')
+
+@login_required
+@csrf_exempt
+def api_track_edit(request, id):
+    data = Track.objects.get(pk=id)
+
+    points = json.loads(request.POST['points'])['track']
+
+    distance = 0
+
+    for p in range(1, len(points)):
+        dlon = radians(points[p][0]) - radians(points[p-1][0])
+        dlat = radians(points[p][1]) - radians(points[p-1][1])
+
+        a = sin(dlat / 2)**2 + cos(points[p-1][1]) * cos(points[p][1]) * sin(dlon / 2)**2
+        distance += 2 * 6373 * atan2(sqrt(a), sqrt(1 - a))
+
+    data.name = request.POST['name']
+    data.points = request.POST['points']
+    data.size = len(points)
+    data.distance = round(distance,2)
+
+    data.save()
+
+    return HttpResponse('ok')
+
+@login_required
+def api_track(request, id):
+    entry = Track.objects.get(pk=id)
+
+    data = json.loads(entry.points)
+    data['name'] = entry.name
+
+    return HttpResponse(json.dumps(data))
 
 @login_required
 def sensors(request):

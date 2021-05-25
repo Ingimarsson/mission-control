@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Track{% endblock %}
+{% block scripts %}
+<script src="{% static "js/track.js" %}"></script>
+{% endblock %}
+{% block content %}
+<div class="ui container">
+<div class="ui equal width grid" style="margin-top: 40px;">
+  <div class="eleven wide column">
+    <a href="{% url 'settings_track' %}">
+      <div class="ui right floated small primary labeled icon button" id="manage_tracks"><i class="map outline icon"></i>Manage Tracks</div>
+    </a>
+    <table class="ui single line table" style="margin-top: 40px">
+      <thead>
+        <tr>
+          <th>Track</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>
+          <canvas id="track_map" width="700" height="300" style="display: block; margin: 0px auto;"></canvas>
+        </td>
+      </tbody>
+        <tfoot>
+          <td>
+          <div class="field">
+	          <div class="ui fluid search selection dropdown" id="track_selection">
+	             <input type="hidden" name="track_select_input">
+	             <i class="dropdown icon"></i>
+	             <div class="default text">Select Track</div>
+	             <div class="menu">
+                 {% for e in entries %}
+                 {% if e.id != 0 %}
+		               <div class='item' data-value="{{ e.id }}">{{e.name}}</div>
+                 {% endif %}
+                 {% endfor %}
+	              </div>
+	            </div>
+ 	          </div>
+        </td>
+      </tfoot>
+    </table>
+    <div class="ui right floated small primary button" style="margin-bottom: 10px;" id="select_track">Select Track</div>
+    <table class="ui single line table">
+      <thead>
+        <tr>
+          <th>Laps</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id='lap_table'></tbody>
+    </table>
+  </div>
+</div>
+</div>
+{% endblock %}

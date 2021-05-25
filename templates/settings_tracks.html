@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Tracks{% endblock %}
+{% block scripts %}
+<script src="{% static "js/settings_tracks.js" %}"></script>
+{% endblock %}
+{% block content %}
+<div class="ui container" style="margin-top: 54px;">
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Track</th>
+      <th>Date Added</th>
+      <th>Distance</th>
+      <th>Points</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for e in entries %}
+    {% if e.id != 0 %}
+    <tr data-id="{{ e.id }}">
+    <td>{{ e.id }}
+    <td>{{ e.name}}</td>
+    <td>{{ e.created_at }}</td>
+    <td>{{ e.distance }} km</td>
+    <td>{{ e.size }}</td>
+    <td><div class="ui right floated mini labeled icon button edit_button"><i class="edit icon"></i> Edit</div></td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+ </tbody>
+</table>
+<div class="ui right floated small primary labeled icon button" id="add"><i class="plus icon"></i> Add Track</div>
+</div>
+{% endblock %}
+{% block modals %}
+<div class="ui large modal" id="modal_edit">
+    <i class="close icon"></i>
+    <div class="header" id="part_name">
+       	Edit Track
+    </div>
+    <div class="content">
+        <div class="ui form">
+            <div class="ui grid">
+                <div class="five wide column">
+                    <h3 class="ui dividing header">Data</h3>
+                    <div class="field">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="field">
+                        <label>Gate</label>
+                        <textarea name="gate" rows=2></textarea>
+                    </div>
+                    <div class="field">
+                        <label>Track</label>
+                        <textarea name="track"></textarea>
+                    </div>
+                </div>
+                <div class="eleven wide column">
+                    <h3 class="ui dividing header">Preview</h3>
+                    <canvas id="track_edit" width="700" height="300" style="display: block; margin: 0px auto;">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui labeled icon button" id="render"><i class="image icon"></i> Render</div>
+        <button type="submit" id="submit" class="ui primary labeled icon button"><i class="save icon"></i> Save</button>
+    </div>
+</div>
+<div class="ui large modal" id="modal_add">
+    <i class="close icon"></i>
+    <div class="header" id="part_name">
+       	Add Track
+    </div>
+    <div class="content">
+        <div class="ui form">
+            <div class="ui grid">
+                <div class="five wide column">
+                    <h3 class="ui dividing header">Data</h3>
+                    <div class="field">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="field">
+                        <label>Gate</label>
+                        <textarea name="gate" rows=2></textarea>
+                    </div>
+                    <div class="field">
+                        <label>Track</label>
+                        <textarea name="track"></textarea>
+                    </div>
+                </div>
+                <div class="eleven wide column">
+                    <h3 class="ui dividing header">Preview</h3>
+                    <canvas id="track_add" width="700" height="300" style="display: block; margin: 0px auto;">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui labeled icon button" id="render"><i class="image icon"></i> Render</div>
+        <button type="submit" id="submit" class="ui primary labeled icon button"><i class="plus icon"></i> Add Track</button>
+    </div>
+</div>
+{% endblock %}

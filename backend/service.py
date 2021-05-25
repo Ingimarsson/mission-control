@@ -1,8 +1,10 @@
 import paho.mqtt.client as mqtt
-
-from time import time
+import asyncio
+import time
 import os
 import json
+from gps import gps
+import sqlite3
 
 class MissionControl(object):
     def __init__(self):
@@ -14,6 +16,10 @@ class MissionControl(object):
         """
         self.buffer= []
         self.send_time = 0
+        self.client_id = 'ts'
+
+        self.time_received = 0  # Time of last client msg reseaved
+        self.client_timeout = 1 # Time until client connection status timeout
 
     def on_connect(self, client, userdata, flags, rc):
         """
@@ -21,7 +27,18 @@ class MissionControl(object):
         """
         print("Connected with result code "+str(rc))
 
-        client.subscribe("ts/#")
+        client.subscribe(self.client_id+"/#")
+
+    def is_client_connected(self):
+        """
+        This function monitor that the client is connected by observing
+        if packets are reseaved from client.
+        """
+
+        if time.time()-self.time_received < self.client_timeout:
+            return True
+        else:
+            return False
 
     def on_message(self, client, userdata, msg):
         """
@@ -37,15 +54,25 @@ class MissionControl(object):
         "control/count" is sent a JSON dictionary with the number of
         messages received from each topic in the last second.
         """
-        print(msg.topic)
 
         # Structure the message and add to the buffer
         data = [msg.topic, msg.payload.decode("utf-8")]
 
-        self.buffer.append(data)
+        if data[0].split('/')[0] == self.client_id:
+            self.buffer.append(data)
+            #print(msg.topic)
+            self.time_received = time.time()
+
+
+
+        if GPS.gps_gather(data) and self.is_client_connected():
+            GPS.calc_distance()
+            GPS.calc_lap_time()
+            GPS.publish(client)
+
 
         # Code that is executed every second
-        if time() - self.send_time > 1:
+        if time.time() - self.send_time > 1:
 
             values_latest = {}
             values_count = {}
@@ -65,9 +92,10 @@ class MissionControl(object):
             client.publish('control/latest', json.dumps(values_latest))
             client.publish('control/count', json.dumps(values_count))
 
+
             # Clear buffer and reset timer
             self.buffer.clear()
-            self.send_time = time()
+            self.send_time = time.time()
 
 
 if __name__ == "__main__":
@@ -80,4 +108,36 @@ if __name__ == "__main__":
     #client.username_pw_set('spark', 'spark')
     client.connect("localhost", 1883, 60)
 
-    client.loop_forever()
+    client.loop_start()
+
+    GPS = gps()
+
+    start_time = time.time()
+    start = True
+    sqlite_path = "D:\dev\mission-control-github\db.sqlite3"
+    conn = sqlite3.connect(sqlite_path)
+    c = conn.cursor()
+
+    while True:
+        status = {
+            'connected': ctrl.is_client_connected()
+        }
+        # Run every second
+        if time.time()-start_time >1:
+            start_time = time.time()
+            client.publish('control/status', json.dumps(status))
+
+        #Sets start time on connect
+        if  status['connected'] == start:
+            start = not start
+            if status['connected']:
+
+                c.execute("select points from control_track where id=%i" % (int(5)))
+                try:
+                    gate = json.loads(c.fetchone()[0])['gate']
+                except Exception as e:
+                    print("Could not load gate points")
+                    gate = None
+                GPS.set_start(time.time(), gate)
+        # Get gate point on connet
+        time.sleep(0.01)
