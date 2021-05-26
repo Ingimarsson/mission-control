@@ -45,6 +45,7 @@ status = {
 path = 'ts/ams/temperature/2'
 lon_path ='ts/gps/longitudinal'
 lat_path ='ts/gps/lateral'
+#file_path = 'gps_FSA_AutoX.csv'
 file_path = 'gps_AIH.csv'
 
 gps_lon, gps_lat = read_csv_data(file_path)
@@ -53,7 +54,7 @@ while True:
     for i in range(len(gps_lon)):
         client.publish(lon_path, gps_lon[i])
         client.publish(lat_path, gps_lat[i])
-        time.sleep(0.1)
+        time.sleep(0.01)
     """
     status['connected'] = True
     client.publish(path, json.dumps(status))

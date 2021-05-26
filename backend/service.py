@@ -66,7 +66,7 @@ class MissionControl(object):
 
 
         if GPS.gps_gather(data) and self.is_client_connected():
-            GPS.calc_distance()
+            GPS.get_distance_traveled()
             GPS.calc_lap_time()
             GPS.publish(client)
 
@@ -114,9 +114,6 @@ if __name__ == "__main__":
 
     start_time = time.time()
     start = True
-    sqlite_path = "D:\dev\mission-control-github\db.sqlite3"
-    conn = sqlite3.connect(sqlite_path)
-    c = conn.cursor()
 
     while True:
         status = {
@@ -131,13 +128,7 @@ if __name__ == "__main__":
         if  status['connected'] == start:
             start = not start
             if status['connected']:
-
-                c.execute("select points from control_track where id=%i" % (int(5)))
-                try:
-                    gate = json.loads(c.fetchone()[0])['gate']
-                except Exception as e:
-                    print("Could not load gate points")
-                    gate = None
-                GPS.set_start(time.time(), gate)
+                GPS.set_start()
+                GPS.finde_track()
         # Get gate point on connet
         time.sleep(0.01)

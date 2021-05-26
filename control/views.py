@@ -113,15 +113,6 @@ def api_track_edit(request, id):
     return HttpResponse('ok')
 
 @login_required
-def api_track(request, id):
-    entry = Track.objects.get(pk=id)
-
-    data = json.loads(entry.points)
-    data['name'] = entry.name
-
-    return HttpResponse(json.dumps(data))
-
-@login_required
 def sensors(request):
     """
     Reads the DBC file and render the sensors page.

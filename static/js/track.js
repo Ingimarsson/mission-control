@@ -1,7 +1,6 @@
-var track_id = 0;
-var track = Object;
-
 $(document).ready(function(){
+  var track_id = 0;
+  var track = Object;
 
   client = new Paho.MQTT.Client('ws://localhost:9001/ws', "clientId" + new Date().getTime());
 
@@ -23,34 +22,34 @@ $(document).ready(function(){
 
   function onMessageArrived(message) {
     data = JSON.parse(message.payloadString);
-    console.log(data.laps)
-    //console.log(data.gps_lon+"\t"+data.gps_lat);
+
+    lat = data.gps_lat;
+    lon = data.gps_lon;
+
     // For rendering track when ID sent from backend
-    /*
-    if (data.track != track_id) {
-
-
+    if (track_id === 0) {
+      track_id = data.track;
       $.ajax({
           dataType: "json",
           url: "/api/track/" + track_id,
           success: function(t) {
-              draw_track(,x,y);
+              draw_track(t,lon, lat);
               track = t
-              track_id = data.track;
           }
       });
 
     }
-    */
+
+
     if (track_id != 0) {
-      draw_track(track, data.gps_lon, data.gps_lat);
+      draw_track(track, lon, lat);
       $("#track", "table").text(track.name);
     }
 
     var html = "";
 
     for (var s in data.laps) {
-      html = html + "<tr><td>#"+data.laps[s].id+"</td><td>"+data.laps[s].time+" s</td><td>"+data.laps[s].dtime+" s</td><td>"+data.laps[s].energy+" Wh</td><td>"+data.laps[s].denergy+" Wh</td></tr>";
+      html = html + "<tr><td>#"+data.laps[s].id+"</td><td>"+data.laps[s].distance+" km</td><td>"+data.laps[s].total_time+" s</td><td>"+data.laps[s].lap_time+" s</td></tr>";
     }
     $("#lap_table").html(html);
 
@@ -68,13 +67,11 @@ $(document).ready(function(){
       console.log(data);
       $.ajax({
           dataType: "json",
-          url: "/api/track/" + data,
+          url: "/api/track/" + track_id,
           success: function(t) {
               draw_track(t,0,0);
               track = t
           }
       });
-      console.log("track set to ")
-      console.log(track_id)
   });
 });
