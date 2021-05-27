@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
     <script src="{% static "js/canvas.js" %}"></script>
+    <script src="{% static "js/banner.js" %}"></script>
     {% block scripts %}{% endblock %}
     <style>
       .grid td, .grid th { padding: 5px 6px 5px 6px !important; }
@@ -33,10 +34,14 @@
       </div>
       <a href="/" class="item"><i class="dashboard icon"></i></i> Dashboard</a>
       <a href="/accumulator" class="item"><i class="battery half icon"></i> Accumulator</a>
+      <a href="/track" class="item"><i class="stopwatch icon"></i> Track</a>
       <a href="/sensors" class="item"><i class="list icon"></i></i> Sensors</a>
       <div class="item">
-        <div class="ui red label" style="margin-left: 0px; display: none;">LIVE</div>
-        <div class="ui label" style="margin-left: 0px;">OFFLINE</div>
+        <div class="ui green label" style="margin-left: 0px; display: none;" id="status_connected">Connected</div>
+        <div class="ui label" style="margin-left: 0px;" id="status_disconnected">OFFLINE</div>
+      </div>
+      <div class="item">
+        <div class="ui black label" style="display: none" id="samples"> 0 samples/sec</div>
       </div>
       <a href="/logout" class="right item"><i class="sign out icon"></i> Sign Out</a>
     </div>
