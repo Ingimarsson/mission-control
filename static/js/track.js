@@ -27,7 +27,7 @@ $(document).ready(function(){
     lon = data.gps_lon;
 
     // For rendering track when ID sent from backend
-    if (track_id === 0) {
+    if (track_id === 0 && data.track != 0) {
       track_id = data.track;
       $.ajax({
           dataType: "json",
@@ -37,7 +37,6 @@ $(document).ready(function(){
               track = t
           }
       });
-
     }
 
 

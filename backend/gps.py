@@ -41,7 +41,7 @@ class gps(object):
 
     def calc_lap_time(self):
         # Check if GPS path intersects the starting line
-        if self.gate is not None:
+        if self.gate is not None and self.gate != 0:
 
             if self.intersect(self.gps_current, self.gps_last, self.gate[0], self.gate[1]):
 
