@@ -32,10 +32,8 @@
       <div class="header item">
         Mission Control
       </div>
-      <a href="/" class="item"><i class="dashboard icon"></i></i> Dashboard</a>
-      <a href="/accumulator" class="item"><i class="battery half icon"></i> Accumulator</a>
-      <a href="/track" class="item"><i class="stopwatch icon"></i> Track</a>
-      <a href="/sensors" class="item"><i class="list icon"></i></i> Sensors</a>
+      <a href="{% url 'track_page' %}" class="item"><i class="stopwatch icon"></i> Track</a>
+      <a href="{% url 'sensor_page'%}" class="item"><i class="list icon"></i></i> Sensors</a>
       <div class="item">
         <div class="ui green label" style="margin-left: 0px; display: none;" id="status_connected">Connected</div>
         <div class="ui label" style="margin-left: 0px;" id="status_disconnected">OFFLINE</div>

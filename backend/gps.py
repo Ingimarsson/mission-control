@@ -88,7 +88,7 @@ class gps(object):
         #print("number of tracks in database"+str(nr_of_tracks))
 
         for i in range(1,nr_of_tracks):
-            c.execute("select points from control_track where id=%i" % i)
+            c.execute("select points from telemetry_track where id=%i" % i)
 
             try:
                 gate = json.loads(c.fetchone()[0])['gate']

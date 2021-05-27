@@ -72,13 +72,15 @@ $(document).ready(function() {
 
     $(".edit_button").on('click', function() {
 	id = $(this).parent().parent().data("id");
-
+  console.log(id)
         $.ajax({
             dataType: "json",
             url: "/api/settings_track/" + id,
             success: function(track) {
                 console.log(track)
+
                 $("[name='name']", "#modal_edit").val(track.name);
+
                 $("[name='gate']", "#modal_edit").val(track.gate[0][0]+","+track.gate[0][1]+"\n"+track.gate[1][0]+","+track.gate[1][1]);
 
                 var coords = [];
