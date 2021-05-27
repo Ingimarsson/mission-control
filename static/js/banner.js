@@ -25,15 +25,17 @@ function onConnectionLost(responseObject) {
 // called when a message arrives
 function onMessageArrived(message) {
 
-
   var data = JSON.parse(message.payloadString);
   
   if(data.connected===true){
     document.getElementById("status_connected").style.display = "inline";
+    document.getElementById("samples").style.display = "inline";
     document.getElementById("status_disconnected").style.display = "none";
+    $('#samples').html(data.total_val + " samples/sec");
   }else{
     document.getElementById("status_disconnected").style.display = "inline";
     document.getElementById("status_connected").style.display = "none";
+    document.getElementById("samples").style.display = "none"
   }
 
 }

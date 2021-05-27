@@ -15,11 +15,13 @@ class MissionControl(object):
         variable for the timestamp of last update sent to clients.
         """
         self.buffer= []
-        self.send_time = 0
         self.client_id = 'ts'
 
+        self.send_time = 0      # Time when last data packet was sent to front end
         self.time_received = 0  # Time of last client msg reseaved
-        self.client_timeout = 1 # Time until client connection status timeout
+        self.client_timeout = 2 # Time until client connection status timeout
+
+        self.incoming_sampling_rate = 0
 
     def on_connect(self, client, userdata, flags, rc):
         """
@@ -60,7 +62,6 @@ class MissionControl(object):
 
         if data[0].split('/')[0] == self.client_id:
             self.buffer.append(data)
-            #print(msg.topic)
             self.time_received = time.time()
 
 
@@ -77,7 +78,6 @@ class MissionControl(object):
             values_latest = {}
             values_count = {}
 
-
             for b in self.buffer:
 
                 # Add msg to latest buffer that will be transited to front end
@@ -89,6 +89,8 @@ class MissionControl(object):
                 else:
                     values_count[b[0]] = 1
 
+            self.incoming_sampling_rate = len(self.buffer)
+
             client.publish('control/latest', json.dumps(values_latest))
             client.publish('control/count', json.dumps(values_count))
 
@@ -97,6 +99,8 @@ class MissionControl(object):
             self.buffer.clear()
             self.send_time = time.time()
 
+    def get_incomming_sampling_rate(self):
+        return self.incoming_sampling_rate
 
 if __name__ == "__main__":
     ctrl = MissionControl()
@@ -117,18 +121,19 @@ if __name__ == "__main__":
 
     while True:
         status = {
-            'connected': ctrl.is_client_connected()
+            'connected': ctrl.is_client_connected(),
+            'total_val': ctrl.get_incomming_sampling_rate()
         }
         # Run every second
         if time.time()-start_time >1:
             start_time = time.time()
             client.publish('control/status', json.dumps(status))
 
-        #Sets start time on connect
+        #Sets start time and resets track system on connect
         if  status['connected'] == start:
             start = not start
             if status['connected']:
                 GPS.set_start()
                 GPS.finde_track()
-        # Get gate point on connet
+
         time.sleep(0.01)
