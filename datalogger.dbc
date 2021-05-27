@@ -33,613 +33,1052 @@ NS_ :
 
 BS_:
 
-BU_: Datalogger dSPACE
+BU_: Junction EnergyMeter AMS Datalogger dSPACE
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ AMSsdcError : 0|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ INCR_DELTA : 0|12@1- (1,0) [0|0] "" Vector__XXX
- SG_ OUTSIDE_RANGE_ENABLE : 0|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ IMPLAUSIBILITY_ENABLE : 0|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ AIN_IN : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ DLOdometer : 0|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ DLgpsBeacon : 0|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1320 EnergyMeterEnergy: 6 Vector__XXX
- SG_ EMUsedEnergy : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1316 EnergyMeterVoltage3: 6 Vector__XXX
- SG_ EMVoltage3 : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1315 EnergyMeterVoltageMC: 6 Vector__XXX
- SG_ EMVoltageMC : 7|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1138 BatteryBoxCellTempAndVoltage72: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1095 BatteryBoxCellTempAndVoltage71: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1094 BatteryBoxCellTempAndVoltage70: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1093 BatteryBoxCellTempAndVoltage69: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1092 BatteryBoxCellTempAndVoltage68: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1091 BatteryBoxCellTempAndVoltage67: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1090 BatteryBoxCellTempAndVoltage66: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1089 BatteryBoxCellTempAndVoltage65: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1088 BatteryBoxCellTempAndVoltage64: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1087 BatteryBoxCellTempAndVoltage63: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1086 BatteryBoxCellTempAndVoltage62: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1085 BatteryBoxCellTempAndVoltage61: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1084 BatteryBoxCellTempAndVoltage60: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1083 BatteryBoxCellTempAndVoltage59: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1082 BatteryBoxCellTempAndVoltage58: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1081 BatteryBoxCellTempAndVoltage57: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1080 BatteryBoxCellTempAndVoltage56: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1079 BatteryBoxCellTempAndVoltage55: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1078 BatteryBoxCellTempAndVoltage54: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1077 BatteryBoxCellTempAndVoltage53: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1076 BatteryBoxCellTempAndVoltage52: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1075 BatteryBoxCellTempAndVoltage51: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1074 BatteryBoxCellTempAndVoltage50: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1073 BatteryBoxCellTempAndVoltage49: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1072 BatteryBoxCellTempAndVoltage48: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1071 BatteryBoxCellTempAndVoltage47: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1070 BatteryBoxCellTempAndVoltage46: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1069 BatteryBoxCellTempAndVoltage45: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1068 BatteryBoxCellTempAndVoltage44: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1067 BatteryBoxCellTempAndVoltage43: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1066 BatteryBoxCellTempAndVoltage42: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1065 BatteryBoxCellTempAndVoltage41: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1064 BatteryBoxCellTempAndVoltage40: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1063 BatteryBoxCellTempAndVoltage39: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1062 BatteryBoxCellTempAndVoltage38: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1061 BatteryBoxCellTempAndVoltage37: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1060 BatteryBoxCellTempAndVoltage36: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1059 BatteryBoxCellTempAndVoltage35: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1058 BatteryBoxCellTempAndVoltage34: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1057 BatteryBoxCellTempAndVoltage33: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1056 BatteryBoxCellTempAndVoltage32: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1055 BatteryBoxCellTempAndVoltage31: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1054 BatteryBoxCellTempAndVoltage30: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1053 BatteryBoxCellTempAndVoltage29: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1052 BatteryBoxCellTempAndVoltage28: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1051 BatteryBoxCellTempAndVoltage27: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1050 BatteryBoxCellTempAndVoltage26: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1049 BatteryBoxCellTempAndVoltage25: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1048 BatteryBoxCellTempAndVoltage24: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1047 BatteryBoxCellTempAndVoltage23: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1046 BatteryBoxCellTempAndVoltage22: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1045 BatteryBoxCellTempAndVoltage21: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1044 BatteryBoxCellTempAndVoltage20: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1043 BatteryBoxCellTempAndVoltage19: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1042 BatteryBoxCellTempAndVoltage18: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1041 BatteryBoxCellTempAndVoltage17: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1040 BatteryBoxCellTempAndVoltage16: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1039 BatteryBoxCellTempAndVoltage15: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1038 BatteryBoxCellTempAndVoltage14: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1037 BatteryBoxCellTempAndVoltage13: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1036 BatteryBoxCellTempAndVoltage12: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1035 BatteryBoxCellTempAndVoltage11: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1034 BatteryBoxCellTempAndVoltage10: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1033 BatteryBoxCellTempAndVoltage9: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1032 BatteryBoxCellTempAndVoltage8: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1031 BatteryBoxCellTempAndVoltage7: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1030 BatteryBoxCellTempAndVoltage6: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1029 BatteryBoxCellTempAndVoltage5: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1028 BatteryBoxCellTempAndVoltage4: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1027 BatteryBoxCellTempAndVoltage3: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1026 BatteryBoxCellTempAndVoltage2: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1025 BatteryBoxCellTempAndVoltage1: 8 Vector__XXX
- SG_ Voltage2 : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Voltage1 : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ Heat1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 321 AMSVariables: 2 Vector__XXX
- SG_ AMStsmsOut : 8|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSstatus4 : 9|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSstatus3 : 10|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSstatus2 : 11|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSstatus1 : 12|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSsdcTrigger : 13|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSsdcReset : 14|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSindicatorReset : 0|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSindicator : 1|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSimdIndicator : 2|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSimdError : 3|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSerror : 4|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSdriverReset : 5|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSairGround : 6|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSaccFanControl : 7|1@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 320 AMSTempCurrent: 8 Vector__XXX
- SG_ AMSboardTemp : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSCurrent : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSDCDCtemp : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ AMSHumidity : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 273 JunctionMisc: 8 Vector__XXX
- SG_ TSALpreCharge : 58|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ TSALmc : 55|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ TSALair2 : 56|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ TSALair1 : 57|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ TSALacc : 59|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ JSafeState : 62|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ JImplausability : 63|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ JHumidity : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ JDRS2 : 31|8@0- (1,0) [0|0] "" Vector__XXX
- SG_ JDRS1 : 23|8@0- (1,0) [0|0] "" Vector__XXX
- SG_ JCurrent24Vfused : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 272 JunctionCurrent: 8 Vector__XXX
- SG_ JCurrentMClv : 55|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ JCurrentdSpace : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ JCurrent5V : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ JCurrent12V : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 336 DasboardButtons: 1 Vector__XXX
- SG_ DBButton2 : 6|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ DBButton1 : 7|1@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 258 DataloggerAcceleration: 8 Vector__XXX
- SG_ DLgpsSpeed : 55|16@0- (0.1,0) [0|0] "" Vector__XXX
- SG_ DLSteeringAngle : 39|16@0- (0.01,0) [0|0] "" Vector__XXX
- SG_ DLLinlineAcceleration : 23|16@0- (0.01,0) [0|0] "" Vector__XXX
- SG_ DLLateralAcceleration : 7|16@0- (0.01,0) [0|0] "" Vector__XXX
-
-BO_ 259 DataloggerLaptime: 2 Vector__XXX
- SG_ DLLaptime : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 257 DataloggerRPM: 8 Vector__XXX
- SG_ DLrpmRearRight : 7|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ DLrpmRearLeft : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ DLrpmFrontRight : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ DLrpmFrontLeft : 55|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 256 DataloggerGPS: 8 Vector__XXX
- SG_ DLgpsLongitude : 39|32@0- (1,0) [0|0] "" Vector__XXX
- SG_ DLgpsLatitude : 7|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1317 EnergyMeterHeat: 6 Vector__XXX
- SG_ EMHeat : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1318 EnergyMeterPower: 6 Vector__XXX
- SG_ EMPower : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1313 EnergyMeterCurrent: 6 Vector__XXX
- SG_ EMCurrent : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1314 EnergyMeterVoltageBattery: 6 Vector__XXX
- SG_ EMVoltage : 23|32@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 305 CoolingMisc: 7 Vector__XXX
- SG_ CoolingCurrent : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ PumpStatus : 53|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ Fan2Status : 54|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ Fan1Status : 55|1@0- (1,0) [0|0] "" Vector__XXX
- SG_ FlowSens : 23|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ FlowHeat : 7|16@0- (1,0) [0|0] "" Vector__XXX
-
-BO_ 304 CoolingHeatSens: 8 Vector__XXX
- SG_ HeatSense1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ EMCurrentCounter : 0|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ EMVoltage3 : 0|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VDCBus : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ResolverError : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 89 TractionControl1: 8 Vector__XXX
+ SG_ TC_torque : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TC_throttle : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TC_rrpm : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TC_frpm : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 124 cfgr_pec_id: 8 AMS
+ SG_ PECconfig : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID_min_cell_volt : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID_max_cell_volt : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID_max_cell_temp : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID_cell_min_temp : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 123 aux_stat_pec_id: 8 AMS
+ SG_ PECstatB : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECstatA : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECauxB : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECauxA : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 122 cell_pec_id: 8 Vector__XXX
+ SG_ PECcellD : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECcellC : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECcellB : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PECcellA : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 129 Junction2: 8 Junction
  SG_ HeatSens4 : 55|16@0- (1,0) [0|0] "" Vector__XXX
  SG_ HeatSens3 : 39|16@0- (1,0) [0|0] "" Vector__XXX
  SG_ HeatSens2 : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ HeatSense1 : 7|16@0- (1,0) [0|0] "" Vector__XXX
 
-BO_ 816 DSPAC_ENABLES: 1 Vector__XXX
- SG_ SHUTDOWN_CIRCUIT : 7|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ TS_ENABLE_IN : 6|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ STARTBUTTON_ENABLE : 5|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ RTD_ENABLE : 4|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ INTERLOCK_IN : 2|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ BRAKELIGHT_OUT : 0|1@1- (1,0) [0|0] "" Vector__XXX
+BO_ 130 Junction1: 8 Junction
+ SG_ FlowSens : 23|16@0- (1,0) [0|0] "L/min" Vector__XXX
+ SG_ FlowHeat : 7|16@0- (1,0) [0|0] "" Vector__XXX
 
-BO_ 800 PEDALBOX_OUT: 4 Vector__XXX
- SG_ BRAKE_OUT : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ THROTTLE_OUT : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 131 Fuses: 4 Junction
+ SG_ BSPDcurrent : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSPDbrake : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PumpStatus : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SDCMC : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SDCBspd : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SDCBots : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSALmc : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan2Status : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan1Status : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ JSafeState : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ JImplausability : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Telemetry : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ dSpace : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ V24Fused : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MCsignals : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ V24 : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ V12 : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ V5 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CoolingControl : 2|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 656 PEDALBOX_GAIN: 6 Vector__XXX
- SG_ BRAKE_GAIN : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ THROTTLE_2_GAIN : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ THROTTLE_1_GAIN : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 147 DataloggerDisplacement: 8 Datalogger
+ SG_ DisplacementRearRight : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DisplacementRearLeft : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DisplacementFrontRight : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DisplacementFrontLeft : 0|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 640 ID_IQ: 4 Vector__XXX
- SG_ IQ_ACTUAL : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ ID_ACTUAL : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 120 AMSValues1: 8 AMS
+ SG_ AMSHighestTemperature : 48|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ AMSLowestTemperature : 32|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ AMSHighestVoltage : 16|16@1+ (0.0001,0) [0|0] "" Vector__XXX
+ SG_ AMSLowestVoltage : 0|16@1+ (0.0001,0) [0|0] "" Vector__XXX
 
-BO_ 624 M_SET: 2 Vector__XXX
- SG_ M_SET : 0|12@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1320 EnergyMeterEnergyCounter: 6 EnergyMeter
+ SG_ EMEnergy : 23|32@0- (1,0) [0|0] "" Vector__XXX
 
-BO_ 608 N_SET: 2 Vector__XXX
- SG_ N_SET : 0|12@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1315 EnergyMeterVoltageMC: 6 EnergyMeter
+ SG_ EMVoltageMC : 7|32@0- (1,0) [0|0] "" Vector__XXX
 
-BO_ 592 AIN_VALS: 4 Vector__XXX
- SG_ AIN_SCALED : 16|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 72 BatteryBoxCellTempAndVoltage72: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 560 RESOLVER_ERROR: 2 Vector__XXX
- SG_ RESOLVER_ERROR : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 71 BatteryBoxCellTempAndVoltage71: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 544 Binary_Values: 6 Vector__XXX
- SG_ STATUS_BOOL : 16|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ IN_OUT_BOOL : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 70 BatteryBoxCellTempAndVoltage70: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 528 I_VALUES: 8 Vector__XXX
- SG_ I_cmd_ramp : 48|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ I_cmd : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ I_ACTUAL : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ I_ACT_FILT : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 69 BatteryBoxCellTempAndVoltage69: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 784 PEDALBOX_INPUTS: 6 Vector__XXX
- SG_ BREAK_VALUE : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ THROTTLE_2_IN : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ THROTTLE_1_IN : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 68 BatteryBoxCellTempAndVoltage68: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 768 TEMPRATURE: 6 Vector__XXX
- SG_ TEMP_AIR : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ TEMP_IGBT : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ TEMP_MOTOR : 0|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 67 BatteryBoxCellTempAndVoltage67: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
 
-BO_ 512 N_VALUES: 8 Vector__XXX
- SG_ N_act_filt : 48|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ N_cmd_ramp : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ N_cmd : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ N_ACTUAL : 0|16@1- (1,0) [0|5000] "" Vector__XXX
+BO_ 66 BatteryBoxCellTempAndVoltage66: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 65 BatteryBoxCellTempAndVoltage65: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 64 BatteryBoxCellTempAndVoltage64: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 63 BatteryBoxCellTempAndVoltage63: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 62 BatteryBoxCellTempAndVoltage62: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 61 BatteryBoxCellTempAndVoltage61: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 60 BatteryBoxCellTempAndVoltage60: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 59 BatteryBoxCellTempAndVoltage59: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 58 BatteryBoxCellTempAndVoltage58: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 57 BatteryBoxCellTempAndVoltage57: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 56 BatteryBoxCellTempAndVoltage56: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 55 BatteryBoxCellTempAndVoltage55: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 54 BatteryBoxCellTempAndVoltage54: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 53 BatteryBoxCellTempAndVoltage53: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 52 BatteryBoxCellTempAndVoltage52: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 51 BatteryBoxCellTempAndVoltage51: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 50 BatteryBoxCellTempAndVoltage50: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 49 BatteryBoxCellTempAndVoltage49: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 48 BatteryBoxCellTempAndVoltage48: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 47 BatteryBoxCellTempAndVoltage47: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 46 BatteryBoxCellTempAndVoltage46: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 45 BatteryBoxCellTempAndVoltage45: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 44 BatteryBoxCellTempAndVoltage44: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 43 BatteryBoxCellTempAndVoltage43: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 42 BatteryBoxCellTempAndVoltage42: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 41 BatteryBoxCellTempAndVoltage41: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 40 BatteryBoxCellTempAndVoltage40: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 39 BatteryBoxCellTempAndVoltage39: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 38 BatteryBoxCellTempAndVoltage38: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 37 BatteryBoxCellTempAndVoltage37: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 36 BatteryBoxCellTempAndVoltage36: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 35 BatteryBoxCellTempAndVoltage35: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 34 BatteryBoxCellTempAndVoltage34: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 33 BatteryBoxCellTempAndVoltage33: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 32 BatteryBoxCellTempAndVoltage32: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 31 BatteryBoxCellTempAndVoltage31: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 30 BatteryBoxCellTempAndVoltage30: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 29 BatteryBoxCellTempAndVoltage29: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 28 BatteryBoxCellTempAndVoltage28: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 27 BatteryBoxCellTempAndVoltage27: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 26 BatteryBoxCellTempAndVoltage26: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 25 BatteryBoxCellTempAndVoltage25: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 24 BatteryBoxCellTempAndVoltage24: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 23 BatteryBoxCellTempAndVoltage23: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 22 BatteryBoxCellTempAndVoltage22: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 21 BatteryBoxCellTempAndVoltage21: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 20 BatteryBoxCellTempAndVoltage20: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 19 BatteryBoxCellTempAndVoltage19: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 18 BatteryBoxCellTempAndVoltage18: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 17 BatteryBoxCellTempAndVoltage17: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 16 BatteryBoxCellTempAndVoltage16: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 15 BatteryBoxCellTempAndVoltage15: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 14 BatteryBoxCellTempAndVoltage14: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 13 BatteryBoxCellTempAndVoltage13: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 12 BatteryBoxCellTempAndVoltage12: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 11 BatteryBoxCellTempAndVoltage11: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 10 BatteryBoxCellTempAndVoltage10: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 9 BatteryBoxCellTempAndVoltage09: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 8 BatteryBoxCellTempAndVoltage08: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 7 BatteryBoxCellTempAndVoltage07: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 6 BatteryBoxCellTempAndVoltage06: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 5 BatteryBoxCellTempAndVoltage05: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 4 BatteryBoxCellTempAndVoltage04: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 3 BatteryBoxCellTempAndVoltage03: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 2 BatteryBoxCellTempAndVoltage02: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 1 BatteryBoxCellTempAndVoltage01: 8 AMS
+ SG_ Voltage2 : 48|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Voltage1 : 32|16@1+ (0.0001,0) [0|6.5535] "" Vector__XXX
+ SG_ Heat2 : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ Heat1 : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 121 AMSValues2: 8 AMS
+ SG_ totalPEC : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSALpreCharge : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSALacc : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSALairP : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSALairN : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSHighCurrentHerror : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSLowCurrentError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSLowTempError : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSHighTempError : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSHighVoltageError : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMSLowVoltageError : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSMeanVoltage : 16|16@1+ (0.0001,0) [0|0] "" Vector__XXX
+ SG_ AMSsdcStatus : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSindicator : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSimdIndicator : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSimdError : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSerror : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSdriverReset : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSaccFanControl : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 119 AMSTempCurrent: 8 AMS
+ SG_ AMSboardTemp : 48|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ AMScurrent : 16|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AMSDCDCtemp : 0|16@1+ (0.01,0) [0|0] "" Vector__XXX
+
+BO_ 146 DataloggerAcceleration: 8 Datalogger
+ SG_ DLgpsSpeed : 55|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ DLsteeringAngle : 39|16@0- (0.01,0) [0|0] "" Vector__XXX
+ SG_ DLLinlineAcceleration : 23|16@0- (0.01,0) [0|0] "" Vector__XXX
+ SG_ DLLateralAcceleration : 7|16@0- (0.01,0) [0|0] "" Vector__XXX
+
+BO_ 149 DataloggerLaptime: 2 Datalogger
+ SG_ DLLaptime : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 150 DataloggerRPM: 8 Datalogger
+ SG_ DLrpmFrontLeft : 55|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ DLrpmFrontRight : 39|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ DLrpmRearLeft : 23|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ DLrpmRearRight : 7|16@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 148 DataloggerGPS: 8 Datalogger
+ SG_ DLgpsLongitude : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ DLgpsLatitude : 7|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1317 EnergyMeterHeat: 6 EnergyMeter
+ SG_ EMHeat : 23|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1318 EnergyMeterPower: 6 EnergyMeter
+ SG_ EMPower : 23|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1313 EnergyMeterCurrent: 6 EnergyMeter
+ SG_ EMCurrent : 23|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1314 EnergyMeterVoltageBattery: 6 EnergyMeter
+ SG_ EMVoltage : 23|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 96 dSpaceEnables: 1 dSPACE
+ SG_ ShutdownCircuit : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSEnableIn : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ StartbuttonEnable : 5|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RTDEnable : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ OutOfRange : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ InterlockIn : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Implausability : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakelightOut : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 99 dSpacePedalboxOut: 4 dSPACE
+ SG_ BrakeOut : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ThrottleOut : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 97 dSpacePedalboxGain: 6 dSPACE
+ SG_ BrakeGain : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Throttle2Gain : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Throttle1Gain : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 102 MCIdIq: 4 dSPACE
+ SG_ IQActual : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IDActual : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 104 MCMSet: 2 dSPACE
+ SG_ MSet : 0|12@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 100 MCAinVals: 4 dSPACE
+ SG_ AinScaled : 16|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 101 MCBinaryValues: 6 dSPACE
+ SG_ StatusBool : 16|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ InOutBool : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 103 MCIValues: 8 dSPACE
+ SG_ IcmdRamp : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Icmd : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IActual : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IActFilt : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 98 dSpacePedalboxInputs: 6 dSPACE
+ SG_ BreakValue : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Throttle2In : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Throttle1In : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 107 MCTemperature: 6 dSPACE
+ SG_ TempAir : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempIGBT : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempMotor : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 105 MCNValues: 8 dSPACE
+ SG_ NActFilt : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ NcmdRamp : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Ncmd : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Nactual : 0|16@1- (1,0) [0|5000] "" Vector__XXX
 
 
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
-CM_ BO_ 592 "Test/dspace";
+CM_ SG_ 3221225472 EMCurrentCounter "ts/energymeter/currentcounter";
+CM_ SG_ 3221225472 EMVoltage3 "ts/energymeter/voltage3";
+CM_ SG_ 3221225472 VDCBus "ts/mc/vdcbus";
+CM_ SG_ 3221225472 ResolverError "ts/mc/resolvererror";
+CM_ SG_ 89 TC_torque "ts/dspace/tctorque";
+CM_ SG_ 89 TC_throttle "ts/dspace/tcthrottle";
+CM_ SG_ 89 TC_rrpm "ts/dspace/tcrrpm";
+CM_ SG_ 89 TC_frpm "ts/dspace/tcfrpm";
+CM_ SG_ 124 PECconfig "ts/ams/pecconfig";
+CM_ SG_ 124 ID_min_cell_volt "ts/ams/idminvolt";
+CM_ SG_ 124 ID_max_cell_volt "ts/ams/idmaxvolt";
+CM_ SG_ 124 ID_max_cell_temp "ts/ams/idmaxtemp";
+CM_ SG_ 124 ID_cell_min_temp "ts/ams/idmintemp";
+CM_ SG_ 123 PECstatB "ts/ams/pecstatb";
+CM_ SG_ 123 PECstatA "ts/ams/pecstata";
+CM_ SG_ 123 PECauxB "ts/ams/pecauxb";
+CM_ SG_ 123 PECauxA "ts/ams/pecauxa";
+CM_ SG_ 122 PECcellD "ts/ams/peccelld";
+CM_ SG_ 122 PECcellC "ts/ams/peccellc";
+CM_ SG_ 122 PECcellB "ts/ams/peccellb";
+CM_ SG_ 122 PECcellA "ts/ams/peccella";
+CM_ SG_ 129 HeatSens4 "ts/junction/heatsens4";
+CM_ SG_ 129 HeatSens3 "ts/junction/heatsens3";
+CM_ SG_ 129 HeatSens2 "ts/junction/heatsens2";
+CM_ SG_ 129 HeatSense1 "ts/junction/heatsense1";
+CM_ SG_ 130 FlowSens "ts/junction/flowsens";
+CM_ SG_ 130 FlowHeat "ts/junction/flowheat";
+CM_ SG_ 131 BSPDcurrent "ts/junction/bspdcurrent";
+CM_ SG_ 131 BSPDbrake "ts/junction/bspdbrake";
+CM_ SG_ 131 PumpStatus "ts/junction/pumpstatus";
+CM_ SG_ 131 SDCMC "ts/junction/sdcmc";
+CM_ SG_ 131 SDCBspd "ts/junction/sdcbspd";
+CM_ SG_ 131 SDCBots "ts/junction/sdcbots";
+CM_ SG_ 131 TSALmc "ts/junction/tsalmc";
+CM_ SG_ 131 Fan2Status "ts/junction/fan2status";
+CM_ SG_ 131 Fan1Status "ts/junction/fan1status";
+CM_ SG_ 131 JSafeState "ts/junction/jsafestate";
+CM_ SG_ 131 JImplausability "ts/junction/jimplausability";
+CM_ SG_ 131 Telemetry "ts/junction/telemetryfuse";
+CM_ SG_ 131 dSpace "ts/junction/dspace";
+CM_ SG_ 131 V24Fused "ts/junction/v24fused";
+CM_ SG_ 131 MCsignals "ts/junction/mcsignals";
+CM_ SG_ 131 V24 "ts/junction/v24";
+CM_ SG_ 131 V12 "ts/junction/v12";
+CM_ SG_ 131 V5 "ts/junction/v5";
+CM_ SG_ 131 CoolingControl "ts/junction/cooling";
+CM_ SG_ 147 DisplacementRearRight "ts/datalogger/displacement/rearright";
+CM_ SG_ 147 DisplacementRearLeft "ts/datalogger/displacement/rearleft";
+CM_ SG_ 147 DisplacementFrontRight "ts/datalogger/displacement/frontright";
+CM_ SG_ 147 DisplacementFrontLeft "ts/datalogger/displacement/frontleft";
+CM_ SG_ 120 AMSHighestTemperature "ts/ams/maxtemperature";
+CM_ SG_ 120 AMSLowestTemperature "ts/ams/mintemperature";
+CM_ SG_ 120 AMSHighestVoltage "ts/ams/amshighestvoltage";
+CM_ SG_ 120 AMSLowestVoltage "ts/ams/minvoltage";
+CM_ SG_ 1320 EMEnergy "ts/energymeter/energycounter";
+CM_ SG_ 1315 EMVoltageMC "ts/energymeter/voltagemc";
+CM_ SG_ 72 Voltage2 "ts/ams/voltage/143";
+CM_ SG_ 72 Voltage1 "ts/ams/voltage/144";
+CM_ SG_ 72 Heat2 "ts/ams/temperature/143";
+CM_ SG_ 72 Heat1 "ts/ams/temperature/144";
+CM_ SG_ 71 Voltage2 "ts/ams/voltage/141";
+CM_ SG_ 71 Voltage1 "ts/ams/voltage/142";
+CM_ SG_ 71 Heat2 "ts/ams/temperature/141";
+CM_ SG_ 71 Heat1 "ts/ams/temperature/142";
+CM_ SG_ 70 Voltage2 "ts/ams/voltage/139";
+CM_ SG_ 70 Voltage1 "ts/ams/voltage/140";
+CM_ SG_ 70 Heat2 "ts/ams/temperature/139";
+CM_ SG_ 70 Heat1 "ts/ams/temperature/140";
+CM_ SG_ 69 Voltage2 "ts/ams/voltage/137";
+CM_ SG_ 69 Voltage1 "ts/ams/voltage/138";
+CM_ SG_ 69 Heat2 "ts/ams/temperature/137";
+CM_ SG_ 69 Heat1 "ts/ams/temperature/138";
+CM_ SG_ 68 Voltage2 "ts/ams/voltage/135";
+CM_ SG_ 68 Voltage1 "ts/ams/voltage/136";
+CM_ SG_ 68 Heat2 "ts/ams/temperature/135";
+CM_ SG_ 68 Heat1 "ts/ams/temperature/136";
+CM_ SG_ 67 Voltage2 "ts/ams/voltage/133";
+CM_ SG_ 67 Voltage1 "ts/ams/voltage/134";
+CM_ SG_ 67 Heat2 "ts/ams/temperature/133";
+CM_ SG_ 67 Heat1 "ts/ams/temperature/134";
+CM_ SG_ 66 Voltage2 "ts/ams/voltage/131";
+CM_ SG_ 66 Voltage1 "ts/ams/voltage/132";
+CM_ SG_ 66 Heat2 "ts/ams/temperature/131";
+CM_ SG_ 66 Heat1 "ts/ams/temperature/132";
+CM_ SG_ 65 Voltage2 "ts/ams/voltage/129";
+CM_ SG_ 65 Voltage1 "ts/ams/voltage/130";
+CM_ SG_ 65 Heat2 "ts/ams/temperature/129";
+CM_ SG_ 65 Heat1 "ts/ams/temperature/130";
+CM_ SG_ 64 Voltage2 "ts/ams/voltage/127";
+CM_ SG_ 64 Voltage1 "ts/ams/voltage/128";
+CM_ SG_ 64 Heat2 "ts/ams/temperature/127";
+CM_ SG_ 64 Heat1 "ts/ams/temperature/128";
+CM_ SG_ 63 Voltage2 "ts/ams/voltage/125";
+CM_ SG_ 63 Voltage1 "ts/ams/voltage/126";
+CM_ SG_ 63 Heat2 "ts/ams/temperature/125";
+CM_ SG_ 63 Heat1 "ts/ams/temperature/126";
+CM_ SG_ 62 Voltage2 "ts/ams/voltage/123";
+CM_ SG_ 62 Voltage1 "ts/ams/voltage/124";
+CM_ SG_ 62 Heat2 "ts/ams/temperature/123";
+CM_ SG_ 62 Heat1 "ts/ams/temperature/124";
+CM_ SG_ 61 Voltage2 "ts/ams/voltage/121";
+CM_ SG_ 61 Voltage1 "ts/ams/voltage/122";
+CM_ SG_ 61 Heat2 "ts/ams/temperature/121";
+CM_ SG_ 61 Heat1 "ts/ams/temperature/122";
+CM_ SG_ 60 Voltage2 "ts/ams/voltage/119";
+CM_ SG_ 60 Voltage1 "ts/ams/voltage/120";
+CM_ SG_ 60 Heat2 "ts/ams/temperature/119";
+CM_ SG_ 60 Heat1 "ts/ams/temperature/120";
+CM_ SG_ 59 Voltage2 "ts/ams/voltage/117";
+CM_ SG_ 59 Voltage1 "ts/ams/voltage/118";
+CM_ SG_ 59 Heat2 "ts/ams/temperature/117";
+CM_ SG_ 59 Heat1 "ts/ams/temperature/118";
+CM_ SG_ 58 Voltage2 "ts/ams/voltage/115";
+CM_ SG_ 58 Voltage1 "ts/ams/voltage/116";
+CM_ SG_ 58 Heat2 "ts/ams/temperature/115";
+CM_ SG_ 58 Heat1 "ts/ams/temperature/116";
+CM_ SG_ 57 Voltage2 "ts/ams/voltage/113";
+CM_ SG_ 57 Voltage1 "ts/ams/voltage/114";
+CM_ SG_ 57 Heat2 "ts/ams/temperature/113";
+CM_ SG_ 57 Heat1 "ts/ams/temperature/114";
+CM_ SG_ 56 Voltage2 "ts/ams/voltage/111";
+CM_ SG_ 56 Voltage1 "ts/ams/voltage/112";
+CM_ SG_ 56 Heat2 "ts/ams/temperature/111";
+CM_ SG_ 56 Heat1 "ts/ams/temperature/112";
+CM_ SG_ 55 Voltage2 "ts/ams/voltage/109";
+CM_ SG_ 55 Voltage1 "ts/ams/voltage/110";
+CM_ SG_ 55 Heat2 "ts/ams/temperature/109";
+CM_ SG_ 55 Heat1 "ts/ams/temperature/110";
+CM_ SG_ 54 Voltage2 "ts/ams/voltage/107";
+CM_ SG_ 54 Voltage1 "ts/ams/voltage/108";
+CM_ SG_ 54 Heat2 "ts/ams/temperature/107";
+CM_ SG_ 54 Heat1 "ts/ams/temperature/108";
+CM_ SG_ 53 Voltage2 "ts/ams/voltage/105";
+CM_ SG_ 53 Voltage1 "ts/ams/voltage/106";
+CM_ SG_ 53 Heat2 "ts/ams/temperature/105";
+CM_ SG_ 53 Heat1 "ts/ams/temperature/106";
+CM_ SG_ 52 Voltage2 "ts/ams/voltage/103";
+CM_ SG_ 52 Voltage1 "ts/ams/voltage/104";
+CM_ SG_ 52 Heat2 "ts/ams/temperature/103";
+CM_ SG_ 52 Heat1 "ts/ams/temperature/104";
+CM_ SG_ 51 Voltage2 "ts/ams/voltage/101";
+CM_ SG_ 51 Voltage1 "ts/ams/voltage/102";
+CM_ SG_ 51 Heat2 "ts/ams/temperature/101";
+CM_ SG_ 51 Heat1 "ts/ams/temperature/102";
+CM_ SG_ 50 Voltage2 "ts/ams/voltage/99";
+CM_ SG_ 50 Voltage1 "ts/ams/voltage/100";
+CM_ SG_ 50 Heat2 "ts/ams/temperature/99";
+CM_ SG_ 50 Heat1 "ts/ams/temperature/100";
+CM_ SG_ 49 Voltage2 "ts/ams/voltage/97";
+CM_ SG_ 49 Voltage1 "ts/ams/voltage/98";
+CM_ SG_ 49 Heat2 "ts/ams/temperature/97";
+CM_ SG_ 49 Heat1 "ts/ams/temperature/98";
+CM_ SG_ 48 Voltage2 "ts/ams/voltage/95";
+CM_ SG_ 48 Voltage1 "ts/ams/voltage/96";
+CM_ SG_ 48 Heat2 "ts/ams/temperature/95";
+CM_ SG_ 48 Heat1 "ts/ams/temperature/96";
+CM_ SG_ 47 Voltage2 "ts/ams/voltage/93";
+CM_ SG_ 47 Voltage1 "ts/ams/voltage/94";
+CM_ SG_ 47 Heat2 "ts/ams/temperature/93";
+CM_ SG_ 47 Heat1 "ts/ams/temperature/94";
+CM_ SG_ 46 Voltage2 "ts/ams/voltage/91";
+CM_ SG_ 46 Voltage1 "ts/ams/voltage/92";
+CM_ SG_ 46 Heat2 "ts/ams/temperature/91";
+CM_ SG_ 46 Heat1 "ts/ams/temperature/92";
+CM_ SG_ 45 Voltage2 "ts/ams/voltage/89";
+CM_ SG_ 45 Voltage1 "ts/ams/voltage/90";
+CM_ SG_ 45 Heat2 "ts/ams/temperature/89";
+CM_ SG_ 45 Heat1 "ts/ams/temperature/90";
+CM_ SG_ 44 Voltage2 "ts/ams/voltage/87";
+CM_ SG_ 44 Voltage1 "ts/ams/voltage/88";
+CM_ SG_ 44 Heat2 "ts/ams/temperature/87";
+CM_ SG_ 44 Heat1 "ts/ams/temperature/88";
+CM_ SG_ 43 Voltage2 "ts/ams/voltage/85";
+CM_ SG_ 43 Voltage1 "ts/ams/voltage/86";
+CM_ SG_ 43 Heat2 "ts/ams/temperature/85";
+CM_ SG_ 43 Heat1 "ts/ams/temperature/86";
+CM_ SG_ 42 Voltage2 "ts/ams/voltage/83";
+CM_ SG_ 42 Voltage1 "ts/ams/voltage/84";
+CM_ SG_ 42 Heat2 "ts/ams/temperature/83";
+CM_ SG_ 42 Heat1 "ts/ams/temperature/84";
+CM_ SG_ 41 Voltage2 "ts/ams/voltage/81";
+CM_ SG_ 41 Voltage1 "ts/ams/voltage/82";
+CM_ SG_ 41 Heat2 "ts/ams/temperature/81";
+CM_ SG_ 41 Heat1 "ts/ams/temperature/82";
+CM_ SG_ 40 Voltage2 "ts/ams/voltage/79";
+CM_ SG_ 40 Voltage1 "ts/ams/voltage/80";
+CM_ SG_ 40 Heat2 "ts/ams/temperature/79";
+CM_ SG_ 40 Heat1 "ts/ams/temperature/80";
+CM_ SG_ 39 Voltage2 "ts/ams/voltage/77";
+CM_ SG_ 39 Voltage1 "ts/ams/voltage/78";
+CM_ SG_ 39 Heat2 "ts/ams/temperature/77";
+CM_ SG_ 39 Heat1 "ts/ams/temperature/78";
+CM_ SG_ 38 Voltage2 "ts/ams/voltage/75";
+CM_ SG_ 38 Voltage1 "ts/ams/voltage/76";
+CM_ SG_ 38 Heat2 "ts/ams/temperature/75";
+CM_ SG_ 38 Heat1 "ts/ams/temperature/76";
+CM_ SG_ 37 Voltage2 "ts/ams/voltage/73";
+CM_ SG_ 37 Voltage1 "ts/ams/voltage/74";
+CM_ SG_ 37 Heat2 "ts/ams/temperature/73";
+CM_ SG_ 37 Heat1 "ts/ams/temperature/74";
+CM_ SG_ 36 Voltage2 "ts/ams/voltage/71";
+CM_ SG_ 36 Voltage1 "ts/ams/voltage/72";
+CM_ SG_ 36 Heat2 "ts/ams/temperature/71";
+CM_ SG_ 36 Heat1 "ts/ams/temperature/72";
+CM_ SG_ 35 Voltage2 "ts/ams/voltage/69";
+CM_ SG_ 35 Voltage1 "ts/ams/voltage/70";
+CM_ SG_ 35 Heat2 "ts/ams/temperature/69";
+CM_ SG_ 35 Heat1 "ts/ams/temperature/70";
+CM_ SG_ 34 Voltage2 "ts/ams/voltage/67";
+CM_ SG_ 34 Voltage1 "ts/ams/voltage/68";
+CM_ SG_ 34 Heat2 "ts/ams/temperature/67";
+CM_ SG_ 34 Heat1 "ts/ams/temperature/68";
+CM_ SG_ 33 Voltage2 "ts/ams/voltage/65";
+CM_ SG_ 33 Voltage1 "ts/ams/voltage/66";
+CM_ SG_ 33 Heat2 "ts/ams/temperature/65";
+CM_ SG_ 33 Heat1 "ts/ams/temperature/66";
+CM_ SG_ 32 Voltage2 "ts/ams/voltage/63";
+CM_ SG_ 32 Voltage1 "ts/ams/voltage/64";
+CM_ SG_ 32 Heat2 "ts/ams/temperature/63";
+CM_ SG_ 32 Heat1 "ts/ams/temperature/64";
+CM_ SG_ 31 Voltage2 "ts/ams/voltage/61";
+CM_ SG_ 31 Voltage1 "ts/ams/voltage/62";
+CM_ SG_ 31 Heat2 "ts/ams/temperature/61";
+CM_ SG_ 31 Heat1 "ts/ams/temperature/62";
+CM_ SG_ 30 Voltage2 "ts/ams/voltage/59";
+CM_ SG_ 30 Voltage1 "ts/ams/voltage/60";
+CM_ SG_ 30 Heat2 "ts/ams/temperature/59";
+CM_ SG_ 30 Heat1 "ts/ams/temperature/60";
+CM_ SG_ 29 Voltage2 "ts/ams/voltage/57";
+CM_ SG_ 29 Voltage1 "ts/ams/voltage/58";
+CM_ SG_ 29 Heat2 "ts/ams/temperature/57";
+CM_ SG_ 29 Heat1 "ts/ams/temperature/58";
+CM_ SG_ 28 Voltage2 "ts/ams/voltage/55";
+CM_ SG_ 28 Voltage1 "ts/ams/voltage/56";
+CM_ SG_ 28 Heat2 "ts/ams/temperature/55";
+CM_ SG_ 28 Heat1 "ts/ams/temperature/56";
+CM_ SG_ 27 Voltage2 "ts/ams/voltage/53";
+CM_ SG_ 27 Voltage1 "ts/ams/voltage/54";
+CM_ SG_ 27 Heat2 "ts/ams/temperature/53";
+CM_ SG_ 27 Heat1 "ts/ams/temperature/54";
+CM_ SG_ 26 Voltage2 "ts/ams/voltage/51";
+CM_ SG_ 26 Voltage1 "ts/ams/voltage/52";
+CM_ SG_ 26 Heat2 "ts/ams/temperature/51";
+CM_ SG_ 26 Heat1 "ts/ams/temperature/52";
+CM_ SG_ 25 Voltage2 "ts/ams/voltage/49";
+CM_ SG_ 25 Voltage1 "ts/ams/voltage/50";
+CM_ SG_ 25 Heat2 "ts/ams/temperature/49";
+CM_ SG_ 25 Heat1 "ts/ams/temperature/50";
+CM_ SG_ 24 Voltage2 "ts/ams/voltage/47";
+CM_ SG_ 24 Voltage1 "ts/ams/voltage/48";
+CM_ SG_ 24 Heat2 "ts/ams/temperature/47";
+CM_ SG_ 24 Heat1 "ts/ams/temperature/48";
+CM_ SG_ 23 Voltage2 "ts/ams/voltage/45";
+CM_ SG_ 23 Voltage1 "ts/ams/voltage/46";
+CM_ SG_ 23 Heat2 "ts/ams/temperature/45";
+CM_ SG_ 23 Heat1 "ts/ams/temperature/46";
+CM_ SG_ 22 Voltage2 "ts/ams/voltage/43";
+CM_ SG_ 22 Voltage1 "ts/ams/voltage/44";
+CM_ SG_ 22 Heat2 "ts/ams/temperature/43";
+CM_ SG_ 22 Heat1 "ts/ams/temperature/44";
+CM_ SG_ 21 Voltage2 "ts/ams/voltage/41";
+CM_ SG_ 21 Voltage1 "ts/ams/voltage/42";
+CM_ SG_ 21 Heat2 "ts/ams/temperature/41";
+CM_ SG_ 21 Heat1 "ts/ams/temperature/42";
+CM_ SG_ 20 Voltage2 "ts/ams/voltage/39";
+CM_ SG_ 20 Voltage1 "ts/ams/voltage/40";
+CM_ SG_ 20 Heat2 "ts/ams/temperature/39";
+CM_ SG_ 20 Heat1 "ts/ams/temperature/40";
+CM_ SG_ 19 Voltage2 "ts/ams/voltage/37";
+CM_ SG_ 19 Voltage1 "ts/ams/voltage/38";
+CM_ SG_ 19 Heat2 "ts/ams/temperature/37";
+CM_ SG_ 19 Heat1 "ts/ams/temperature/38";
+CM_ SG_ 18 Voltage2 "ts/ams/voltage/35";
+CM_ SG_ 18 Voltage1 "ts/ams/voltage/36";
+CM_ SG_ 18 Heat2 "ts/ams/temperature/35";
+CM_ SG_ 18 Heat1 "ts/ams/temperature/36";
+CM_ SG_ 17 Voltage2 "ts/ams/voltage/33";
+CM_ SG_ 17 Voltage1 "ts/ams/voltage/34";
+CM_ SG_ 17 Heat2 "ts/ams/temperature/33";
+CM_ SG_ 17 Heat1 "ts/ams/temperature/34";
+CM_ SG_ 16 Voltage2 "ts/ams/voltage/31";
+CM_ SG_ 16 Voltage1 "ts/ams/voltage/32";
+CM_ SG_ 16 Heat2 "ts/ams/temperature/31";
+CM_ SG_ 16 Heat1 "ts/ams/temperature/32";
+CM_ SG_ 15 Voltage2 "ts/ams/voltage/29";
+CM_ SG_ 15 Voltage1 "ts/ams/voltage/30";
+CM_ SG_ 15 Heat2 "ts/ams/temperature/29";
+CM_ SG_ 15 Heat1 "ts/ams/temperature/30";
+CM_ SG_ 14 Voltage2 "ts/ams/voltage/27";
+CM_ SG_ 14 Voltage1 "ts/ams/voltage/28";
+CM_ SG_ 14 Heat2 "ts/ams/temperature/27";
+CM_ SG_ 14 Heat1 "ts/ams/temperature/28";
+CM_ SG_ 13 Voltage2 "ts/ams/voltage/25";
+CM_ SG_ 13 Voltage1 "ts/ams/voltage/26";
+CM_ SG_ 13 Heat2 "ts/ams/temperature/25";
+CM_ SG_ 13 Heat1 "ts/ams/temperature/26";
+CM_ SG_ 12 Voltage2 "ts/ams/voltage/23";
+CM_ SG_ 12 Voltage1 "ts/ams/voltage/24";
+CM_ SG_ 12 Heat2 "ts/ams/temperature/23";
+CM_ SG_ 12 Heat1 "ts/ams/temperature/24";
+CM_ SG_ 11 Voltage2 "ts/ams/voltage/21";
+CM_ SG_ 11 Voltage1 "ts/ams/voltage/22";
+CM_ SG_ 11 Heat2 "ts/ams/temperature/21";
+CM_ SG_ 11 Heat1 "ts/ams/temperature/22";
+CM_ SG_ 10 Voltage2 "ts/ams/voltage/19";
+CM_ SG_ 10 Voltage1 "ts/ams/voltage/20";
+CM_ SG_ 10 Heat2 "ts/ams/temperature/19";
+CM_ SG_ 10 Heat1 "ts/ams/temperature/20";
+CM_ SG_ 9 Voltage2 "ts/ams/voltage/17";
+CM_ SG_ 9 Voltage1 "ts/ams/voltage/18";
+CM_ SG_ 9 Heat2 "ts/ams/temperature/17";
+CM_ SG_ 9 Heat1 "ts/ams/temperature/18";
+CM_ SG_ 8 Voltage2 "ts/ams/voltage/15";
+CM_ SG_ 8 Voltage1 "ts/ams/voltage/16";
+CM_ SG_ 8 Heat2 "ts/ams/temperature/15";
+CM_ SG_ 8 Heat1 "ts/ams/temperature/16";
+CM_ SG_ 7 Voltage2 "ts/ams/voltage/13";
+CM_ SG_ 7 Voltage1 "ts/ams/voltage/14";
+CM_ SG_ 7 Heat2 "ts/ams/temperature/13";
+CM_ SG_ 7 Heat1 "ts/ams/temperature/14";
+CM_ SG_ 6 Voltage2 "ts/ams/voltage/11";
+CM_ SG_ 6 Voltage1 "ts/ams/voltage/12";
+CM_ SG_ 6 Heat2 "ts/ams/temperature/11";
+CM_ SG_ 6 Heat1 "ts/ams/temperature/12";
+CM_ SG_ 5 Voltage2 "ts/ams/voltage/9";
+CM_ SG_ 5 Voltage1 "ts/ams/voltage/10";
+CM_ SG_ 5 Heat2 "ts/ams/temperature/9";
+CM_ SG_ 5 Heat1 "ts/ams/temperature/10";
+CM_ SG_ 4 Voltage2 "ts/ams/voltage/7";
+CM_ SG_ 4 Voltage1 "ts/ams/voltage/8";
+CM_ SG_ 4 Heat2 "ts/ams/temperature/7";
+CM_ SG_ 4 Heat1 "ts/ams/temperature/8";
+CM_ SG_ 3 Voltage2 "ts/ams/voltage/5";
+CM_ SG_ 3 Voltage1 "ts/ams/voltage/6";
+CM_ SG_ 3 Heat2 "ts/ams/temperature/5";
+CM_ SG_ 3 Heat1 "ts/ams/temperature/6";
+CM_ SG_ 2 Voltage2 "ts/ams/voltage/3";
+CM_ SG_ 2 Voltage1 "ts/ams/voltage/4";
+CM_ SG_ 2 Heat2 "ts/ams/temperature/3";
+CM_ SG_ 2 Heat1 "ts/ams/temperature/4";
+CM_ SG_ 1 Voltage2 "ts/ams/voltage/1";
+CM_ SG_ 1 Voltage1 "ts/ams/voltage/2";
+CM_ SG_ 1 Heat2 "ts/ams/temperature/1";
+CM_ SG_ 1 Heat1 "ts/ams/temperature/2";
+CM_ SG_ 121 totalPEC "ts/ams/totalpec";
+CM_ SG_ 121 TSALpreCharge "ts/ams/tsalprecharge";
+CM_ SG_ 121 TSALacc "ts/ams/tsalacc";
+CM_ SG_ 121 TSALairP "ts/ams/tsalair2";
+CM_ SG_ 121 TSALairN "ts/ams/tsalair1";
+CM_ SG_ 121 BMSHighCurrentHerror "ts/ams/highcurrentherror";
+CM_ SG_ 121 BMSLowCurrentError "ts/ams/lowcurrenterror";
+CM_ SG_ 121 BMSLowTempError "ts/ams/lowtemperror";
+CM_ SG_ 121 BMSHighTempError "ts/ams/hightemperror";
+CM_ SG_ 121 BMSHighVoltageError "ts/ams/highvoltageerror";
+CM_ SG_ 121 BMSLowVoltageError "ts/ams/lowvoltageerror";
+CM_ SG_ 121 AMSMeanVoltage "ts/ams/meanvoltage";
+CM_ SG_ 121 AMSsdcStatus "ts/ams/sdcstatus";
+CM_ SG_ 121 AMSindicator "ts/ams/amsindicator";
+CM_ SG_ 121 AMSimdIndicator "ts/ams/imdindicator";
+CM_ SG_ 121 AMSimdError "ts/ams/imderror";
+CM_ SG_ 121 AMSerror "ts/ams/amserror";
+CM_ SG_ 121 AMSdriverReset "ts/ams/drivetsstart";
+CM_ SG_ 121 AMSaccFanControl "ts/ams/accfancontrol";
+CM_ SG_ 119 AMSboardTemp "ts/ams/boardtemp";
+CM_ SG_ 119 AMScurrent "ts/ams/amscurrent";
+CM_ SG_ 119 AMSDCDCtemp "ts/ams/dcdctemp";
+CM_ SG_ 146 DLgpsSpeed "ts/datalogger/gps/speed";
+CM_ SG_ 146 DLsteeringAngle "ts/datalogger/steeringangle";
+CM_ SG_ 146 DLLinlineAcceleration "ts/datalogger/acceleration/linear";
+CM_ SG_ 146 DLLateralAcceleration "ts/datalogger/acceleration/lateral";
+CM_ SG_ 149 DLLaptime "ts/datalogger/laptime";
+CM_ SG_ 150 DLrpmFrontLeft "ts/datalogger/rpm/frontleft";
+CM_ SG_ 150 DLrpmFrontRight "ts/datalogger/rpm/frontright";
+CM_ SG_ 150 DLrpmRearLeft "ts/datalogger/rpm/rearleft";
+CM_ SG_ 150 DLrpmRearRight "ts/datalogger/rpm/rearright";
+CM_ SG_ 148 DLgpsLongitude "ts/datalogger/gps/longitude";
+CM_ SG_ 148 DLgpsLatitude "ts/datalogger/gps/latitude";
+CM_ SG_ 1317 EMHeat "ts/energymeter/heat";
+CM_ SG_ 1318 EMPower "ts/energymeter/power";
+CM_ SG_ 1313 EMCurrent "ts/energymeter/current";
+CM_ SG_ 1314 EMVoltage "ts/energymeter/voltagebattery";
+CM_ SG_ 96 ShutdownCircuit "ts/dspace/enables/sdc";
+CM_ SG_ 96 TSEnableIn "ts/dspace/enables/tsenablein";
+CM_ SG_ 96 StartbuttonEnable "ts/dspace/enables/startbuttonenable";
+CM_ SG_ 96 RTDEnable "ts/dspace/enables/rtdenable";
+CM_ SG_ 96 OutOfRange "ts/dspace/enables/outofrange";
+CM_ SG_ 96 InterlockIn "ts/dspace/enables/interlockin";
+CM_ SG_ 96 Implausability "ts/dspace/enables/implausability";
+CM_ SG_ 96 BrakelightOut "ts/dspace/enables/brakelightout";
+CM_ SG_ 99 BrakeOut "ts/dspace/pedalboxout/brakeout";
+CM_ SG_ 99 ThrottleOut "ts/dspace/pedalboxout/throttleout";
+CM_ SG_ 97 BrakeGain "ts/dspace/pedalboxgain/brakegain";
+CM_ SG_ 97 Throttle2Gain "ts/dspace/pedalboxgain/throttle2gain";
+CM_ SG_ 97 Throttle1Gain "ts/dspace/pedalboxgain/throttle1gain";
+CM_ BO_ 102 "MC";
+CM_ SG_ 102 IQActual "ts/mc/iqactual";
+CM_ SG_ 102 IDActual "ts/mc/idactual";
+CM_ SG_ 104 MSet "ts/mc/mset";
+CM_ BO_ 100 "Test/dspace";
+CM_ SG_ 100 AinScaled "ts/mc/ainvals/ainscaled";
+CM_ SG_ 101 StatusBool "ts/mc/binaryvalues/statusbool";
+CM_ SG_ 101 InOutBool "ts/mc/binaryvalues/inoutbool";
+CM_ SG_ 103 IcmdRamp "ts/mc/icmdramp";
+CM_ SG_ 103 Icmd "ts/mc/icmd";
+CM_ SG_ 103 IActual "ts/mc/iactual";
+CM_ SG_ 103 IActFilt "ts/mc/iactfilt";
+CM_ SG_ 98 BreakValue "ts/dspace/pedalboxinputs/breakvalue";
+CM_ SG_ 98 Throttle2In "ts/dspace/pedalboxinputs/throttle2in";
+CM_ SG_ 98 Throttle1In "ts/dspace/pedalboxinputs/throttle1in";
+CM_ SG_ 107 TempAir "ts/mc/temperature/tempair";
+CM_ SG_ 107 TempIGBT "ts/mc/temperature/tempigbt";
+CM_ SG_ 107 TempMotor "ts/mc/temperature/tempmotor";
+CM_ SG_ 105 NActFilt "ts/mc/nactfilt";
+CM_ SG_ 105 NcmdRamp "ts/mc/ncmdramp";
+CM_ SG_ 105 Ncmd "ts/mc/ncmd";
+CM_ SG_ 105 Nactual "ts/mc/nactual";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 
